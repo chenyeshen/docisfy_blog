@@ -1,0 +1,12 @@
+<!-- docs/_sidebar.md -->
+- [Linux怎么恢复root密码](/LINUX/Linux初级入门/doc/Linux怎么恢复root密码.md)
+- [vi和vim快捷键](/LINUX/Linux初级入门/doc/vi和vim快捷键.md)
+- [关机&重启命令](/LINUX/Linux初级入门/doc/关机&重启命令.md)
+- [文件目录类](/LINUX/Linux初级入门/doc/文件目录类.md)
+- [用户管理](/LINUX/Linux初级入门/doc/用户管理.md)
+- [压缩和解压类](/LINUX/Linux初级入门/doc/压缩和解压类.md)
+- [修改文件权限-chmod](/LINUX/Linux初级入门/doc/修改文件权限-chmod.md)
+- [crond任务调度](/LINUX/Linux初级入门/doc/crond任务调度.md)
+- [如何设置CentOS为中文显示](/LINUX/Linux初级入门/doc/如何设置CentOS为中文显示.md)
+- [ubuntu首次登陆设置root密码](/LINUX/Linux初级入门/doc/ubuntu首次登陆设置root密码.md)
+- [ubuntu开启SSH服务远程登录](/LINUX/Linux初级入门/doc/ubuntu开启SSH服务远程登录.md)

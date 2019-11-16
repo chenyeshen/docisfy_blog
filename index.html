@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      //...
+       coverpage: true,
+       loadSidebar: true,
+	   loadNavbar: true,
+       name: '喵星人 | yeshen',
+       subMaxLevel: 4,
+	   auto2top: true, //当路径改变时，滚到屏幕顶部
+       search: 'auto',
+	    search : [
+      '/',            // => /README.md
+      '/其他/',      // => /zh-cn/README.md
+      '/Spring/',      // => /zh-cn/README.md
+      '/SpringCloud/',      // => /zh-cn/README.md
+      '/SpringBoot/',      // => /zh-cn/README.md
+      '/Vue/',      // => /zh-cn/README.md
+      '/Linux初级入门/',      // => /zh-cn/README.md
+      '/Linux中级篇/',      // => /zh-cn/README.md
+    ],
+
+    // 完整配置参数
+    search: {
+      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      paths: [], // or 'auto'
+      placeholder: 'Type to search',
+
+      // 支持本地化
+      placeholder: {
+        '/zh-cn/': '搜索',
+        '/': 'Type to search'
+      },
+
+      noData: 'No Results!',
+
+      // 支持本地化
+      noData: {
+        '/zh-cn/': '找不到结果',
+        '/': 'No Results'
+      },
+
+      // 搜索标题的最大程级, 1 - 6
+      depth: 4
+    }
+	   
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+</body>
+</html>
