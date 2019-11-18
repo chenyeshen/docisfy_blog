@@ -1,7 +1,7 @@
 * [**首页**](/)
 * **大数据**
   * [**Hadoop**](/大数据/Hadoop/doc/centos7安装Hadoop3以上超级详细过程踩过的坑香菇.md)
-  * [**Kafka**](/大数据/Hadoop/doc/centos7安装Hadoop3以上超级详细过程踩过的坑香菇.md)
+  * [**Kafka**](/大数据/Kafka/doc/CentOS7搭建Kafka.md)
 * **JAVA**
   * [**集合**](/JAVA/Collection集合/README.md)
   * [**多线程**](/JAVA/Thread多线程/README.md)
@@ -22,7 +22,7 @@
   * [**RabbiMq**](/JAVA/RabbitMq/doc/windows10环境下的RabbitMQ安装步骤.md) 
   * [**Elasticsearch**](/JAVA/Elasticsearch/doc/Elasticsearch用logstash增量导入Mysql数据.md) 
 * **面试题**
-  * [**SpringBoot**](/面试题/SpringBoot/doc/SpringBoot/SpringBoot面试，一个问题就干趴下了.md)
+  * [**SpringBoot**](/面试题/SpringBoot/doc/SpringBoot面试，一个问题就干趴下了.md)
 * **Linux**
   * [**Linux初级入门**](/LINUX/Linux初级入门/doc/linxu随手记.md)
   * [**Linux中级篇**](/LINUX/Linux中级篇/doc/基础命令常用命令.md)
