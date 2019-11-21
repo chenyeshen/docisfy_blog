@@ -8,4 +8,4 @@
 * Good good study, day day to up!
 
 [GitHub](https://github.com/mukeyeshen/docsify)
-[Get Started](https://github.com/mukeyeshen/docsify)
+[Get Started](/README.md)

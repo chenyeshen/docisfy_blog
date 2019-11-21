@@ -12,7 +12,7 @@
 
 ### fileWriteToDbDemo.java
 
-```
+```java
 package com.yeshen.springbatch_demo.fileWriteToDb;
 
 import com.yeshen.springbatch_demo.bean.User;
@@ -129,7 +129,7 @@ public class fileWriteToDbDemo {
 
 ### DbWriterToFileDemo.java
 
-```
+```java
 package com.yeshen.springbatch_demo.DbWriterToFile;
 
 import cn.hutool.core.bean.BeanUtil;
@@ -272,7 +272,7 @@ public class DbWriterToFileDemo {
 
 ### DbWriterToXmlDemo.java
 
-```
+```java
 package com.yeshen.springbatch_demo.DbWriteToXmlDemo;
 
 import com.fasterxml.jackson.core.JsonProcessingException;

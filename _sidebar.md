@@ -1,3 +1,3 @@
-* [**【打造docsify个人乐园】**](/README.md)
+* [【打造docsify个人乐园】](/README.md)
 
 
