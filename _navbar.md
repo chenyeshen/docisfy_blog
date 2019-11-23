@@ -1,6 +1,7 @@
 * [**首页**](/)
 * **大数据**
   * [**Hadoop**](/大数据/Hadoop/doc/centos7安装Hadoop3以上超级详细过程踩过的坑香菇.md)
+  * [**Hive**](/大数据/Hive/doc/Hive安装与配置详解.md)
   * [**Kafka**](/大数据/Kafka/doc/CentOS7搭建Kafka.md)
 * **JAVA**
   * [**集合**](/JAVA/Collection集合/README.md)

@@ -44,17 +44,6 @@ useradd -g mysql mysql
 chown -R mysql.mysql /usr/local/mysql/
 ```
 
-或者
-
-```
-chown -R mysql .
-
-chgrp -R mysql .
-```
-
-
-注意最后有一点
-
 #### 6.初始化数据库
 
 创建mysql_install_db安装文件
@@ -77,9 +66,7 @@ bin/mysqld --initialize --user=mysql --basedir=/usr/local/mysql --datadir=/usr/l
 ```
 
 ```
-/usr/local/mysql/bin/mysqld --initialize --user=mysql
-
-/usr/local/mysql/bin/mysqld (mysqld 8.0.11) initializing of server in progress as process 5826
+bin/mysqld (mysqld 8.0.11) initializing of server in progress as process 5826
 
  [Server] A temporary password is generated for root@localhost: twi=Tlsi<0O!
 
@@ -108,17 +95,15 @@ vim  /etc/my.cnf
 
 ```
 [mysqld]
-
 basedir = /usr/local/mysql   
 datadir = /usr/local/mysql/data
 socket = /usr/local/mysql/mysql.sock
 character-set-server=utf8
 port = 3306
-
-   sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
- [client]
-   socket = /usr/local/mysql/mysql.sock
-   default-character-set=utf8
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+[client]
+socket = /usr/local/mysql/mysql.sock
+default-character-set=utf8
 ```
 
 esc保存
@@ -127,13 +112,6 @@ esc保存
 
 #### 8建立MySQL服务
 
-```
-cp -a ./support-files/mysql.server /etc/init.d/mysqld
-
-cp mysql.server /etc/init.d/mysql
-chmod +x /etc/init.d/mysql
-```
-
 
 添加到系统服务
 
@@ -141,9 +119,12 @@ chmod +x /etc/init.d/mysql
 chkconfig --add mysql
 cp -a ./support-files/mysql.server /etc/init.d/mysqld
 
- chmod +x /etc/rc.d/init.d/mysqld    
-
+给/etc/rc.d/init.d/mysql赋权可执行权限
+chmod +x /etc/rc.d/init.d/mysqld    
+添加mysql服务
 chkconfig --add mysqld
+mysql服务开机自启
+chkconfig --level 345 mysql on
 ```
 
 检查服务是否生效  
@@ -217,7 +198,7 @@ netstat -nupl|grep 3306
 开放3306端口
 
 ```
-firewall -cmd --permanent --add-prot=3306/tcp
+firewall-cmd --add-port=3306/tcp --permanent
 ```
 
 重启防火墙
@@ -274,14 +255,14 @@ mysql> select user,host from user;
 你可能执行的是:
 
 ```
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 ```
 
 
 改成:
 
 ```
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123';
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
 ```
 
 
