@@ -5,5 +5,5 @@
 - [百度云盘视频集合](/其他/others/doc/百度云盘视频集合.md)
 - [Studio 3T for MongoDB破解教程](/其他/others/doc/Studio3TforMongoDB破解教程.md)
 - [内网穿透工具-frp在Windos服务器搭建](/其他/others/doc/内网穿透工具-frp在Windos服务器搭建.md)
-- [国内篇免费公共dns](/其他/others/doc/国内篇免费公共dns.md)
+- [国内免费公共dns](/其他/others/doc/国内免费公共dns.md)
 - [从零开始史上最详尽V2Ray搭建](/其他/others/doc/从零开始史上最详尽V2Ray搭建.md)
