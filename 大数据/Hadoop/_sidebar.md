@@ -6,5 +6,7 @@
 - [mysql和Hadoop的开机自启动](/大数据/Hadoop/doc/mysql和Hadoop的开机自启动.md)
 - [HDFS部分：8020端口，9000端口和50070端口.md](/大数据/Hadoop/doc/HDFS部分：8020端口，9000端口和50070端口.md.md)
 - [搭建hadoop伪分布式环境bug Java Hot Spot TM](/大数据/Hadoop/doc/搭建hadoop伪分布式环境bugJavaHotSpotTM.md)
+- [Hadoop之—— WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform...](/大数据/Hadoop/doc/HadoopWARNUnableto.md)
+- [搭建hadoop伪分布式环境bug:Java Java HotSpot(TM) 64-Bit Server VM warning: You have loaded library /usr/local/hadoop/lib/native/libhadoop.so.1.0.0](/大数据/Hadoop/doc/搭建hadoop伪分布式环境Youhaveloadedibrary.md)
 
 
