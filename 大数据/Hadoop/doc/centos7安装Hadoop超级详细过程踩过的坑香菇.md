@@ -118,6 +118,28 @@ Last login: Tue Nov 12 12:30:30 2019 from localhost
 
 
 
+### hadoop2.0开放端口
+
+```
+[root@hadoophost sbin]# firewall-cmd --add-port=50070/tcp --permanent
+
+[root@hadoophost sbin]# firewall-cmd --add-port=50075/tcp --permanent
+
+[root@hadoophost sbin]# firewall-cmd --add-port=8088/tcp --permanent
+
+[root@hadoophost sbin]# firewall-cmd --reload
+```
+
+### hadoop3.0开放端口
+
+```
+[root@hadoophost sbin]# firewall-cmd --add-port=9870/tcp --permanent
+
+[root@hadoophost sbin]# firewall-cmd --reload
+```
+
+
+
 ## Hadoop详细步骤
 
 - **下载地址：**<http://hadoop.apache.org/>
@@ -201,7 +223,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_152
 
 ```
 
-#### **hdfs-site.xml**
+#### **hadoop 3.0版以上 hdfs-site.xml**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -217,14 +239,38 @@ export JAVA_HOME=/usr/java/jdk1.8.0_152
    
    <property>
   <name>dfs.http.address</name>
-  <value>hadoophost:9870</value>
+  <value>hadoophost:9870</value>  
   </property>
   
 </configuration>
 
 ```
 
-####  **mapred-site.xml**
+#### hadoop 2.0版 hdfs-site.xml
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+ <property>
+   <name>dfs.replication</name>
+   <value>1</value>
+   </property>
+
+   <property>
+  <name>dfs.http.address</name>
+  <value>hadoophost:50070</value>  
+  </property>
+
+</configuration>
+```
+
+
+
+####  mapred-site.xml**
 
 ```
 <?xml version="1.0"?>
@@ -307,6 +353,17 @@ YARN_NODEMANAGER_USER=root
 
 
 
-### 8) 访问9870端口查看是否成功
+### 8) hadoop3.0 访问9870端口查看是否成功
 
 ![](https://i.loli.net/2019/11/13/Hdup4RWQMrGlJcU.png)
+
+
+
+### 9) hadoop2.0 访问50070端口查看是否成功
+
+![](https://i.loli.net/2019/11/24/IpAf85P2MqEiB7L.png)
+
+### 10) hadoop2.0 访问8088端口查看节点
+
+![](https://i.loli.net/2019/11/24/UEHWMVyxwTzpIK3.png)
+
