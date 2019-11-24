@@ -134,7 +134,7 @@ Last login: Tue Nov 12 12:30:30 2019 from localhost
 
 ```
 [root@hadoophost sbin]# firewall-cmd --add-port=9870/tcp --permanent
-
+[root@hadoophost sbin]# firewall-cmd --add-port=9864/tcp --permanent
 [root@hadoophost sbin]# firewall-cmd --reload
 ```
 
@@ -356,6 +356,8 @@ YARN_NODEMANAGER_USER=root
 ### 8) hadoop3.0 访问9870端口查看是否成功
 
 ![](https://i.loli.net/2019/11/13/Hdup4RWQMrGlJcU.png)
+
+![](https://i.loli.net/2019/11/24/3NcEdIBU2QSLAwt.png)
 
 
 
