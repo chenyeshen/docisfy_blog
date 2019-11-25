@@ -5,6 +5,8 @@
   * [**Kafka**](/大数据/Kafka/doc/CentOS7搭建Kafka.md)
   * [**Hbase**](/大数据/Hbase/doc/HBASE安装与配置.md)
   * [**Flume**](/大数据/Flume/doc/Flume框架基础.md)
+  * [**Scala**](/大数据/Scala/doc/Scala安装.md)
+  * [**Spark**](/大数据/Spark/doc/Spark的安装及配置（单机版）.md)
 * **JAVA**
   * [**集合**](/JAVA/Collection集合/README.md)
   * [**多线程**](/JAVA/Thread多线程/README.md)
