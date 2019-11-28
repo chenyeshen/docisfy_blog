@@ -6,6 +6,8 @@
 
 链接: https://pan.baidu.com/s/1b0dU7qFW5wCJpG38nhkV6g 提取码: vkfi 
 
+或者mega网盘无限速下载： [aria2链接](https://mega.nz/#!GihgGQIb!MQyxm5_0UsAccXCWgSc4vAeQUYHU62xjN8U7q2Goweo)
+
 #### 打开文件：
 
 **运行 start.bat**
