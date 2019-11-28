@@ -1,4 +1,5 @@
 <!-- docs/_sidebar.md -->
+- [Windows安装Aria2客户端及破解百度网盘限速问题](/其他/others/doc/Windows安装Aria2客户端及破解百度网盘限速问题.md)
 - [navicat连接mysql解决方案](/其他/others/doc/navicat连接mysql解决方案.md)
 - [如何免费激活Windows10只需要Copy&Paste](/其他/others/doc/如何免费激活Windows10只需要Copy&Paste.md)
 - [VPS搭建个人翻墙工具及其V2RayN使用教程](/其他/others/doc/VPS搭建个人翻墙工具及其V2RayN使用教程.md)

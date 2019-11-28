@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b74a407-6a9e-4ba9-b9ba-58c8f4b08d6e" name="Default" comment="" />
+    <list default="true" id="2b74a407-6a9e-4ba9-b9ba-58c8f4b08d6e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +26,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="334" />
-    <option name="y" value="340" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="454" />
+    <option name="y" value="45" />
     <option name="width" value="818" />
     <option name="height" value="585" />
   </component>
@@ -37,6 +39,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -48,8 +52,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -58,7 +60,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,6 +130,8 @@
       <workItem from="1573883069043" duration="1080000" />
       <workItem from="1574097534663" duration="105000" />
       <workItem from="1574353527330" duration="92000" />
+      <workItem from="1574665136462" duration="446000" />
+      <workItem from="1574665613527" duration="674000" />
     </task>
     <task id="LOCAL-00001" summary="初次提交">
       <created>1573883507332</created>
@@ -154,10 +158,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1277000" />
+    <option name="totallyTimeSpent" value="2397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="454" y="45" width="818" height="585" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="RestServices" order="3" />
@@ -180,8 +184,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mybatis datasource" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.39130434" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25738078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5376106" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4689564" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
