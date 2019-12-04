@@ -1,3 +1,5 @@
 <!-- docs/_sidebar.md -->
-- [redis](/JAVA/Redis/doc/redis.md)
+- [Redis详解](/JAVA/Redis/doc/Redis详解.md)
+- [Redis-哨兵模式和高可用集群解析](/JAVA/Redis/doc/Redis-哨兵模式和高可用集群解析.md)
+- [Cluster模式搭建](/JAVA/Redis/doc/Cluster模式搭建.md)
 
