@@ -19,7 +19,7 @@
   * [**SpringCloudAlibaba**](/JAVA/SpringCloudAlibaba/doc/springcloudAlibaba初步探索.md)
 * **框架**
   * [**TK.Mapper**](/JAVA/通用mapper/doc/通用TkMapper时开启Mybatis的二级缓存.md)
-  * [**Redis**](/JAVA/Redis/README.md)
+  * [**Redis**](/JAVA/Redis/doc/Redis详解.md)
   * [**Shiro**](/JAVA/Shiro/doc/Shiro权限注解.md)
   * [**Maven**](/JAVA/Maven/doc/2019-08-24-maven导入alipay-sdk-java包到本地仓库.md)
   * [**JWT**](/JAVA/JWT/doc/JWT初篇.md)
