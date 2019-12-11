@@ -17,9 +17,9 @@ cd /lib/systemd/system
 ```
 vim zookeeper.service
 
-
 ```
 
+```
 [Unit]
 Description=Zookeeper service
 After=network.target
@@ -35,12 +35,19 @@ Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
+```
+
+
 
 #### 　　3、生成kafka.service配置文件，并添加内容
 
 ```
 vim kafka.service
+```
 
+
+
+```
 [Unit]
 Description=Apache Kafka server (broker)
 After=network.target  zookeeper.service
