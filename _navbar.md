@@ -31,6 +31,8 @@
 * **Linux**
   * [**Linux初级入门**](/LINUX/Linux初级入门/doc/linxu随手记.md)
   * [**Linux中级篇**](/LINUX/Linux中级篇/doc/基础命令常用命令.md)
+* **缓存** 
+  * [**SpringBoot整合Ehcache实现缓存功能**](/JAVA/缓存/doc/SpringBoot整合Ehcache实现缓存功能.md)
 * **Web** 
   * [**Vue**](/WEB/Vue/README.md)
   * [**Node**](/WEB/Node/README.md)
