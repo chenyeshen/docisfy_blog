@@ -498,7 +498,7 @@ public class EhcacheRepositoryImpl implements EhcacheRepository {
     @Autowired
     private UserRepository userRepository;
 
-    @CachePut(key = "#p0")
+    @CachePut(key = "#user.getId")
     @Override
     public User save(User user) {
         User savedUser = userRepository.save(user);
@@ -506,21 +506,21 @@ public class EhcacheRepositoryImpl implements EhcacheRepository {
         return savedUser;
     }
 
-    @Cacheable(key = "#p0")
+    @Cacheable(key = "#id")
     @Override
     public User selectById(Integer id) {
         logger.info("查询功能，缓存未找到，直接读取数据库，ID为：" + id);
         return userRepository.findOne(id);
     }
 
-    @CachePut(key = "#p0")
+    @CachePut(key = "#user.getId")
     @Override
     public User updateById(User user) {
         logger.info("更新功能，更新缓存，直接更新数据库，ID为：" + user.getId());
         return userRepository.save(user);
     }
 
-    @CacheEvict(key = "#p0")
+    @CacheEvict(key = "#id")
     @Override
     public String deleteById(Integer id) {
         logger.info("删除功能，删除缓存，直接删除数据库数据，ID为：" + id);

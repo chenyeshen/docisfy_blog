@@ -32,9 +32,9 @@
   * [**Linux初级入门**](/LINUX/Linux初级入门/doc/linxu随手记.md)
   * [**Linux中级篇**](/LINUX/Linux中级篇/doc/基础命令常用命令.md)
 * **三级缓存** 
-  * [**服务本地堆缓存**](/缓存/doc/SpringBoot整合Ehcache实现缓存功能.md)
-  * [**Redis分布式缓存**](/缓存/doc/1.md)
-  * [**Nginx本地缓存**](/缓存/doc/1.md)
+  * [**服务本地堆缓存**](/缓存/服务本地堆缓存/doc/SpringBoot整合Ehcache实现缓存功能.md)
+  * [**Redis分布式缓存**](/缓存/Redis分布式缓存/doc//缓存/Redis分布式缓存/doc/Redis中的LRU淘汰策略分析.md)
+  * [**Nginx本地缓存**](/缓存/Nginx本地缓存/doc/1.md)
 * **Web** 
   * [**Vue**](/WEB/Vue/README.md)
   * [**Node**](/WEB/Node/README.md)
