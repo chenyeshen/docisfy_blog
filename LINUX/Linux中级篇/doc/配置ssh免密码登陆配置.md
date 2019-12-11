@@ -84,3 +84,34 @@ Last login: Tue Nov 12 12:30:30 2019 from localhost
 
 ```
 
+# 多系统免密码登录
+
+在客户端服务器通过ssh-gen命令生成一个公钥/私钥，将生成的公钥拷贝到待免密码登陆的服务器，最后通过密钥加密解密配对的形式实现登陆。
+
+服务系统A：192.168.65.128
+
+服务系统B：192.168.65.129
+
+服务系统A连接服务系统B
+
+###  1.) 拷贝服务系统A中公钥id_rsa.pub到服务系统B
+
+```
+scp id_rsa.pub root@192.168.65.129:/opt/software/
+```
+
+### 2.) 在服务系统B中将服务系统A拷贝的公钥文件写入到认证文件
+
+```
+cat id_rsa.pub >> ~/.ssh/authorized_keys
+```
+
+![img](http://upload-images.jianshu.io/upload_images/5629542-9d0c90950c1c5aaf.png?imageMogr2/auto-orient/strip|imageView2/2/w/638/format/webp)
+
+
+
+### 3.) 服务系统A测试登录服务系统B
+
+![img](http://upload-images.jianshu.io/upload_images/5629542-40c2daf874e5fe18.png?imageMogr2/auto-orient/strip|imageView2/2/w/665/format/webp)
+
+服务系统A登录服务系统B

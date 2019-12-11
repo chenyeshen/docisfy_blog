@@ -398,7 +398,7 @@ export PATH=$PATH:$KAFKA_HOME/bin
 
 ```
 #从后台启动Kafka集群（3台都需要启动）
-kafka-server-start.sh -daemon ../config/server.properties
+./kafka-server-start.sh -daemon ../config/server.properties
 
 # 官方推荐启动方式：
 /usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties &
