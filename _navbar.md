@@ -16,7 +16,7 @@
   * [**Spring**](/JAVA/Spring/README.md)
   * [**SpringBatch**](/JAVA/SpringBatch/doc/springbatch入门笔记.md)
   * [**SpringBoot**](/JAVA/SpringBoot/doc/springboot项目个人通用构建.md)
-  * [**SpringCloud**](/JAVA/SpringCloud/README.md)
+  * [**SpringCloud**](/JAVA/SpringCloud/doc/SpringCloud服务治理Eureka.md)
   * [**SpringCloudAlibaba**](/JAVA/SpringCloudAlibaba/doc/springcloudAlibaba初步探索.md)
 * **框架**
   * [**TK.Mapper**](/JAVA/通用mapper/doc/通用TkMapper时开启Mybatis的二级缓存.md)
