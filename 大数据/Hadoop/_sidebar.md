@@ -1,9 +1,12 @@
 <!-- docs/_sidebar.md -->
+* **安装Hadoop**
 - [centos7安装Hadoop超级详细过程踩过的坑香菇](/大数据/Hadoop/doc/centos7安装Hadoop超级详细过程踩过的坑香菇.md)
 - [hadoop的安装和配置完全分布式模式](/大数据/Hadoop/doc/hadoop的安装和配置完全分布式模式.md)
+* **springboot整合Hadoop**
 - [hadoop3.0新特性总结](/大数据/Hadoop/doc/hadoop3.0新特性总结.md)
 - [springboot整合Hadoop3.X](/大数据/Hadoop/doc/springboot整合Hadoop3.X.md)
 - [springboot整合Hadoop2.X](/大数据/Hadoop/doc/springboot整合Hadoop2.X.md)
+* **Hadoop的问题以及解决办法**
 - [Java API操作Hadoop可能会遇到的问题以及解决办法](/大数据/Hadoop/doc/JavaAPI操作Hadoop可能会遇到的问题以及解决办法.md)
 - [Exception in thread “main” java.lang.NoClassDefFoundError: com/google/common/base/Preconditions](/大数据/Hadoop/doc/ExceptioninthreadjavaPreconditions.md)
 - [SLF4J: Class path contains multiple SLF4J bindings. SLF4J: Found binding in](/大数据/Hadoop/doc/SLF4JClasspathcontainsmultipleSLF4Jbindings.md)
