@@ -7,6 +7,7 @@
 * **SpringBoot整合**
 - [SpringBoot整合Swagger](/JAVA/SpringBoot/doc/SpringBoot整合Swagger.md)
 - [SpringBoot整合RabbitMQ](/JAVA/SpringBoot/doc/SpringBoot整合RabbitMQ.md)
+- [SpringBoot整合Ehcache实现缓存功能](/JAVA/SpringBoot/doc/SpringBoot整合Ehcache实现缓存功能.md)
 - [SpringBoot整合KafKa集群的集成](/JAVA/SpringBoot/doc/SpringBoot整合KafKa集群的集成.md)
 - [SpringBoot整合Mybatis实现多数据源](/JAVA/SpringBoot/doc/SpringBoot整合Mybatis实现多数据源.md)
 - [SpringBoot集成EsayPoi(Excel导入导出)](/JAVA/SpringBoot/doc/SpringBoot集成EsayPoi(Excel导入导出).md)

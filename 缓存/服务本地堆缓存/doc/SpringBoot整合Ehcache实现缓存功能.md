@@ -182,21 +182,32 @@ server:
 ehcache.xml配置文件：
 
 ```
+<?xml version="1.0" encoding="UTF-8"?>
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
 
+    <!-- 磁盘缓存位置 -->
+    <diskStore path="java.io.tmpdir/ehcache"/>
+
+    <!-- 默认缓存 -->
+    <defaultCache
+            maxEntriesLocalHeap="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            maxEntriesLocalDisk="10000000"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"/>
+
+    <!-- yeshen缓存 -->
     <cache name="lemonCache"
+           maxElementsInMemory="1000"
            eternal="false"
-           maxEntriesLocalHeap="0"
-           timeToIdleSeconds="200"/>
-
-    <!-- eternal：true表示对象永不过期，此时会忽略timeToIdleSeconds和timeToLiveSeconds属性，默认为false -->
-    <!-- maxEntriesLocalHeap：堆内存中最大缓存对象数，0没有限制 -->
-    <!-- timeToIdleSeconds： 设定允许对象处于空闲状态的最长时间，以秒为单位。当对象自从最近一次被访问后，
-    如果处于空闲状态的时间超过了timeToIdleSeconds属性值，这个对象就会过期，EHCache将把它从缓存中清空。
-    只有当eternal属性为false，该属性才有效。如果该属性值为0，则表示对象可以无限期地处于空闲状态 -->
+           timeToIdleSeconds="5"
+           timeToLiveSeconds="5"
+           overflowToDisk="false"
+           memoryStoreEvictionPolicy="LRU"/>
 </ehcache>
-
 ```
 
 ##### 3、实体类
@@ -599,3 +610,88 @@ public class EhcacheController {
 ```
 
 启动项目，打开浏览器，输入地址：[http://localhost:8080/ehcache/save](https://link.jianshu.com?t=http://localhost:8080/ehcache/save)就可以实现插入数据，再输入[http://localhost:8080/ehcache/select?id=1](https://link.jianshu.com?t=http://localhost:8080/ehcache/select?id=1)就可以查询到数据，这时候观察控制台或者日志就可以发现，查询的时候并没有去访问数据库，而是直接在缓存中查询了，至于更新和删除，道理是一样的。
+
+# 使用缓存
+
+这里主要向小伙伴们介绍缓存中几个核心的注解使用。
+
+## @CacheConfig
+
+这个注解在类上使用，用来描述该类中所有方法使用的缓存名称，当然也可以不使用该注解，直接在具体的缓存注解上配置名称，示例代码如下：
+
+```
+@Service
+@CacheConfig(cacheNames = "user")
+public class UserService {
+}
+复制代码
+```
+
+## @Cacheable
+
+这个注解一般加在查询方法上，表示将一个方法的返回值缓存起来，默认情况下，缓存的 key 就是方法的参数，缓存的 value 就是方法的返回值。示例代码如下：
+
+```
+@Cacheable(key = "#id")
+public User getUserById(Integer id,String username) {
+    System.out.println("getUserById");
+    return getUserFromDBById(id);
+}
+复制代码
+```
+
+当有多个参数时，默认就使用多个参数来做 key ，如果只需要其中某一个参数做 key ，则可以在 @Cacheable 注解中，通过 key 属性来指定 key ，如上代码就表示只使用 id 作为缓存的 key ，如果对 key 有复杂的要求，可以自定义 keyGenerator 。当然，Spring Cache 中提供了root对象，可以在不定义 keyGenerator 的情况下实现一些复杂的效果，root 对象有如下属性：
+
+![img](https://user-gold-cdn.xitu.io/2019/6/12/16b494107e528e1f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+也可以通过 keyGenerator 自定义 key ，方式如下：
+
+```
+@Component
+public class MyKeyGenerator implements KeyGenerator {
+    @Override
+    public Object generate(Object target, Method method, Object... params) {
+        return method.getName()+Arrays.toString(params);
+    }
+}
+复制代码
+```
+
+然后在方法上使用该 keyGenerator ：
+
+```
+@Cacheable(keyGenerator = "myKeyGenerator")
+public User getUserById(Long id) {
+    User user = new User();
+    user.setId(id);
+    user.setUsername("lisi");
+    System.out.println(user);
+    return user;
+}
+复制代码
+```
+
+## @CachePut
+
+这个注解一般加在更新方法上，当数据库中的数据更新后，缓存中的数据也要跟着更新，使用该注解，可以将方法的返回值自动更新到已经存在的 key 上，示例代码如下：
+
+```
+@CachePut(key = "#user.id")
+public User updateUserById(User user) {
+    return user;
+}
+复制代码
+```
+
+## @CacheEvict
+
+这个注解一般加在删除方法上，当数据库中的数据删除后，相关的缓存数据也要自动清除，该注解在使用的时候也可以配置按照某种条件删除（ condition 属性）或者或者配置清除所有缓存（ allEntries 属性），示例代码如下：
+
+```
+@CacheEvict()
+public void deleteUserById(Integer id) {
+    //在这里执行删除操作， 删除是去数据库中删除
+}
+复制代码
+```
+
