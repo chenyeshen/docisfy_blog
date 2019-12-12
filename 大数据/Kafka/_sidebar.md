@@ -7,5 +7,7 @@
 - [Kafka常用命令总结](/大数据/Kafka/doc/Kafka常用命令总结.md)
 * **kafka开机自启**
 - [Centos上将zookeeper和kafka设置为开机自启](/大数据/Kafka/doc/Centos上将zookeeper和kafka设置为开机自启.md)
+* **springboot整合kafka**
+- [springboot集成kafka](/大数据/Kafka/doc/springboot集成kafka.md)
 
 
