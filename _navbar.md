@@ -29,7 +29,6 @@
   * [**Elasticsearch**](/JAVA/Elasticsearch/doc/Elasticsearch用logstash增量导入Mysql数据.md) 
 * **设计模式**
   * [**笔记imocc**](/imocc/design_pattern/README.md)
-  * [**Java模式**](/设计模式/README.md)
 * **elasticsearch**
   * [**elasticsearch 核心知识篇**](/elasticsearch-core/index.md)
   * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)
