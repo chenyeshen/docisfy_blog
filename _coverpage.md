@@ -1,4 +1,4 @@
-![logo](https://docsify.js.org/_media/icon.svg)
+![logo](./static/icon.svg)
 
 # docsify打造个人学习乐园
 
