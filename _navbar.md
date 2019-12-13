@@ -30,6 +30,9 @@
 * **设计模式**
   * [**笔记imocc**](/imocc/design_pattern/README.md)
   * [**Java模式**](/设计模式/README.md)
+* **elasticsearch**
+  * [**elasticsearch 核心知识篇**](/elasticsearch-core/index.md)
+  * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)
 * **面试题**
   * [**SpringBoot**](/面试题/SpringBoot/doc/SpringBoot面试，一个问题就干趴下了.md)
 * **Linux**
@@ -39,10 +42,6 @@
   * [**服务本地堆缓存**](/缓存/服务本地堆缓存/doc/SpringBoot整合Ehcache实现缓存功能.md)
   * [**Redis分布式缓存**](/缓存/Redis分布式缓存/doc/Redis中的LRU淘汰策略分析.md)
   * [**Nginx本地缓存**](/缓存/Nginx本地缓存/doc/1.md)
-* **Web** 
-  * [**Vue**](/WEB/Vue/README.md)
-  * [**Node**](/WEB/Node/README.md)
-  * [**JavaScript**](/WEB/JavaScript/README.md)
 * **项目** 
   * [**亿级流量**](/亿级流量电商详情页系统实战/README.md)  
   * [**阿里云**](/项目/阿里云/阿里云的短信服务发送手机验证码.md)  
