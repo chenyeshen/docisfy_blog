@@ -1,2 +1,2 @@
 <!-- docs/_sidebar.md -->
-- [Redis中的LRU淘汰策略分析](/缓存/Redis分布式缓存/doc/Redis中的LRU淘汰策略分析.md)
+- [亿级流量电商详情页系统实战](/亿级流量电商详情页系统实战/README.md)
