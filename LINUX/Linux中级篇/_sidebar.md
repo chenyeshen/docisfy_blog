@@ -20,12 +20,17 @@
 * **Linux**
 - [CentOS7安装wget及配置](/LINUX/Linux中级篇/doc/CentOS7安装wget及配置.md)
 - [CentOS设置静态IP](/LINUX/Linux中级篇/doc/CentOS设置静态IP.md)
+- [配置阿里云 YUM 源](/LINUX/Linux中级篇/doc/yum.md)
+- [磁盘管理](/LINUX/Linux中级篇/doc/dist-manage.md)
+- [linux 常用知识](/LINUX/Linux中级篇/doc/index.md)
 - [ls command not found的解决办法](/LINUX/Linux中级篇/doc/lscommandnotfound的解决办法.md)
 - [Linux下tar.xz结尾的文件的解压方法](/LINUX/Linux中级篇/doc/Linux下tar.xz结尾的文件的解压方法.md)
 - [在Ubuntu上安装Rocket.Chat](/LINUX/Linux中级篇/doc/在Ubuntu上安装Rocket.Chat.md)
 - [centos6和centos7防火墙的关闭](/LINUX/Linux中级篇/doc/centos6和centos7防火墙的关闭.md)
 * **SSH免密码**
 - [配置ssh免密码登陆配置](/LINUX/Linux中级篇/doc/配置ssh免密码登陆配置.md)
+* **Git**
+- [Git 安装与使用](/LINUX/Linux中级篇/doc/git.md)
 
 
 
