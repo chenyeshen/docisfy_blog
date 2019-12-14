@@ -1,4 +1,4 @@
-# 052. 基于 OpenResty 部署应用层 nginx 以及 nginx + lua 开发 hello world
+# 基于 OpenResty 部署应用层 nginx 以及 nginx + lua 开发 hello world
 我们这里玩儿 nginx，全都会在 nginx 里去写 lua 脚本，因为我们需要自定义一些特殊的业务逻辑
 
 比如说，流量分发，自己用 lua 去写分发的逻辑，在分发层 nginx 里去写的

@@ -6,6 +6,7 @@
 * **Redis**
 - [CentOS7下Redis4安装与配置教程（Redis开机启动）](/LINUX/Linux中级篇/doc/CentOS7下Redis4安装与配置教程（Redis开机启动）.md)
 * **Nginx**
+- [基于OpenResty部署应用层nginx以及nginx+lua开发hello world](/LINUX/Linux中级篇/doc/基OpenResty部署应用层nginx.md)
 - [CentOS安装nginx的tar包](/LINUX/Linux中级篇/doc/CentOS安装nginx的tar包.md)
 - [Nginx快速安装&配置](/LINUX/Linux中级篇/doc/Nginx快速安装&配置.md)
 * **MySQL8**
