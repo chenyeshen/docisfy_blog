@@ -10,8 +10,10 @@
 * **Zuul**
 - [SpringCloudAPI网关服务Zuul](/JAVA/SpringCloud/doc/SpringCloudAPI网关服务Zuul.md)
 * **Hystrix**
+- [hystrix](/JAVA/SpringCloud/doc/hystrix/index.md)
 - [SpringCloud容错保护Hystrix（一）](/JAVA/SpringCloud/doc/SpringCloud容错保护Hystrix（一）.md)
 - [SpringCloud容错保护Hystrix（二）](/JAVA/SpringCloud/doc/SpringCloud容错保护Hystrix（二）.md)
 * **Config**
+- [spring cloud config](/JAVA/SpringCloud/doc/config/index.md)
 - [SpringCloud分布式配置中心Config](/JAVA/SpringCloud/doc/SpringCloud分布式配置中心Config.md)
 

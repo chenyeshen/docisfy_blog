@@ -9,6 +9,7 @@
 - [基于OpenResty部署应用层nginx以及nginx+lua开发hello world](/LINUX/Linux中级篇/doc/基OpenResty部署应用层nginx.md)
 - [CentOS安装nginx的tar包](/LINUX/Linux中级篇/doc/CentOS安装nginx的tar包.md)
 - [Nginx快速安装&配置](/LINUX/Linux中级篇/doc/Nginx快速安装&配置.md)
+- [Lua在Nginx的应用](/LINUX/Linux中级篇/doc/Lua在Nginx的应用.md)
 * **MySQL8**
 - [Linux安装MySQL8.0tar包](/LINUX/Linux中级篇/doc/Linux安装MySQL8.0tar包.md)
 - [Linux下彻底卸载MySQL](/LINUX/Linux中级篇/doc/Linux下彻底卸载MySQL.md)
@@ -24,6 +25,7 @@
 - [配置阿里云 YUM 源](/LINUX/Linux中级篇/doc/yum.md)
 - [磁盘管理](/LINUX/Linux中级篇/doc/dist-manage.md)
 - [linux 常用知识](/LINUX/Linux中级篇/doc/index.md)
+- [安装make时出错usrbinenv perl No such file or directory.md](/LINUX/Linux中级篇/doc/安装make时出错usrbinenNo.md)
 - [ls command not found的解决办法](/LINUX/Linux中级篇/doc/lscommandnotfound的解决办法.md)
 - [Linux下tar.xz结尾的文件的解压方法](/LINUX/Linux中级篇/doc/Linux下tar.xz结尾的文件的解压方法.md)
 - [在Ubuntu上安装Rocket.Chat](/LINUX/Linux中级篇/doc/在Ubuntu上安装Rocket.Chat.md)
