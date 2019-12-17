@@ -1,5 +1,6 @@
 <!-- docs/_sidebar.md -->
 * **SpringBoot**
+- [Spring Boot学习笔记](/JAVA/SpringBoot/doc/SpringBoot学习笔记.md)
 - [springboot项目个人通用构建](/JAVA/SpringBoot/doc/springboot项目个人通用构建.md)
 - [SpringBoo配置文件加载](/JAVA/SpringBoot/doc/SpringBoo配置文件加载.md)
 - [关于SpringBoot上传图片的几种方式](/JAVA/SpringBoot/doc/关于SpringBoot上传图片的几种方式.md)
