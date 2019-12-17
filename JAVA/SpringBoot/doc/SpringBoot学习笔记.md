@@ -1,17 +1,3 @@
----
-layout:     post
-title:      Spring Boot 学习笔记
-subtitle:   学习笔记
-date:       2018-01-15
-author:     chenyeshen
-header-img: img/bg8.jpg
-catalog: true
-tags:
-    - Java
-    - Springboot
-    - 学习笔记
----
-
 # **一、**Spring Boot 入门
 
 ## 1、Spring Boot 简介

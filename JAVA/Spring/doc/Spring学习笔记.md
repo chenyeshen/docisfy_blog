@@ -1,17 +1,3 @@
----
-layout:     post
-title:      Spring 学习笔记
-subtitle:   学习笔记
-date:       2017-11-16
-author:     chenyeshen
-header-img: img/bg8.jpg
-catalog: true
-tags:
-    - Java
-    - Spring
-    - 学习笔记
----
-
 #  Spring_day01总结
 
 ### **今日内容**
