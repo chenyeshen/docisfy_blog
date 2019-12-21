@@ -29,11 +29,12 @@
   * [**Elasticsearch**](/JAVA/Elasticsearch/doc/Elasticsearch用logstash增量导入Mysql数据.md) 
 * **设计模式**
   * [**笔记imocc**](/imocc/design_pattern/README.md)
+  * [**Utils工具类**](/Utils工具类/doc/spring常用工具集合.md)
 * **elasticsearch**
   * [**elasticsearch 核心知识篇**](/elasticsearch-core/index.md)
   * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)
 * **面试题**
-  * [**SpringBoot**](/面试题/SpringBoot/doc/SpringBoot面试，一个问题就干趴下了.md)
+  * [**Java**](/面试题/SpringBoot/doc/java基础.md)
 * **Linux**
   * [**Linux初级入门**](/LINUX/Linux初级入门/doc/linxu随手记.md)
   * [**Linux中级篇**](/LINUX/Linux中级篇/doc/基础命令常用命令.md)

@@ -1,2 +1,15 @@
 <!-- docs/_sidebar.md -->
-- [SpringBoot/SpringBoot面试，一个问题就干趴下了](/面试题/SpringBoot/doc/SpringBoot面试，一个问题就干趴下了.md)
+- [Java基础](/面试题/SpringBoot/doc/java基础.md)
+- [集合](/面试题/SpringBoot/doc/集合.md)
+- [多线程](/面试题/SpringBoot/doc/多线程.md)
+- [JVM](/面试题/SpringBoot/doc/JVM.md)
+- [设计模式](/面试题/SpringBoot/doc/设计模式.md)
+- [Spring](/面试题/SpringBoot/doc/Spring.md)
+- [SpringMVC](/面试题/SpringBoot/doc/SpringMVC.md)
+- [Mybatis](/面试题/SpringBoot/doc/Mybatis.md)
+- [SpringBoot](/面试题/SpringBoot/doc/SpringBoot.md)
+- [Redis](/面试题/SpringBoot/doc/Redis.md)
+- [RabbitMq](/面试题/SpringBoot/doc/RabbitMq.md)
+- [Shrio](/面试题/SpringBoot/doc/Shrio.md)
+- [SpringBoot面试，一个问题就干趴下了](/面试题/SpringBoot/doc/SpringBoot面试，一个问题就干趴下了.md)
+
