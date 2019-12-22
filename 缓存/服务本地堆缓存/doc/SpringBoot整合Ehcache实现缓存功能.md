@@ -126,11 +126,7 @@ public class MainApplication {
 spring:
   profiles:
     active: dev
-  # 缓存配置
-  cache:
-    type: ehcache
-    ehcache:
-      config: classpath:ehcache.xml
+ 
 
 # 日志配置
 logging:
@@ -179,6 +175,12 @@ server:
 
 ```
 
+
+
+
+
+
+
 ehcache.xml配置文件：
 
 ```
@@ -203,8 +205,8 @@ ehcache.xml配置文件：
     <cache name="lemonCache"
            maxElementsInMemory="1000"
            eternal="false"
-           timeToIdleSeconds="5"
-           timeToLiveSeconds="5"
+           timeToIdleSeconds="10"
+           timeToLiveSeconds="30"
            overflowToDisk="false"
            memoryStoreEvictionPolicy="LRU"/>
 </ehcache>
@@ -433,7 +435,35 @@ public class JpaConfiguration {
 
 ```
 
-##### 5、与缓存相关的代码
+##### 5、EhcacheConfig
+
+```
+/**
+ * 本地堆缓存配置类
+ * @author asus
+ */
+@Configuration
+@EnableCaching
+public class EhcacheConfig {
+
+	@Bean
+	public EhCacheManagerFactoryBean ehCacheManagerFactoryBean() {
+		EhCacheManagerFactoryBean cacheManagerFactoryBean = new EhCacheManagerFactoryBean();
+		cacheManagerFactoryBean.setConfigLocation(new ClassPathResource("ehcache.xml"));
+		cacheManagerFactoryBean.setShared(true);
+		return cacheManagerFactoryBean;
+	}
+
+	@Bean
+	public EhCacheCacheManager eCacheCacheManager(EhCacheManagerFactoryBean bean) {
+		return new EhCacheCacheManager(bean.getObject());
+	}
+}
+```
+
+
+
+##### 6、与缓存相关的代码
 
 EhcacheRepository：
 

@@ -155,11 +155,7 @@ spring:
                       min-idle: 20
             password: 123456
             port: 6379
-#################################### Ehcache配置 ##########################################
-       cache:
-         type: ehcache
-         ehcache:
-           config: ehcache.xml
+
 
 
 ```
@@ -194,6 +190,34 @@ spring:
            memoryStoreEvictionPolicy="LRU"/>
 </ehcache>
 ```
+
+### EhcacheConfig
+
+```
+/**
+ * 本地堆缓存配置类
+ * @author asus
+ */
+@Configuration
+@EnableCaching
+public class EhcacheConfig {
+
+	@Bean
+	public EhCacheManagerFactoryBean ehCacheManagerFactoryBean() {
+		EhCacheManagerFactoryBean cacheManagerFactoryBean = new EhCacheManagerFactoryBean();
+		cacheManagerFactoryBean.setConfigLocation(new ClassPathResource("ehcache.xml"));
+		cacheManagerFactoryBean.setShared(true);
+		return cacheManagerFactoryBean;
+	}
+
+	@Bean
+	public EhCacheCacheManager eCacheCacheManager(EhCacheManagerFactoryBean bean) {
+		return new EhCacheCacheManager(bean.getObject());
+	}
+}
+```
+
+
 
 ### ProductInventory
 

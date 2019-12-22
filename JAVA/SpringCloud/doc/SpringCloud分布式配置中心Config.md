@@ -33,40 +33,69 @@ public class ConfigserverApplication {
 在application.properties文件中添加git仓库配置：
 
 ```
-spring.application.name=config-server
+##端口号
 server.port=9000
-#表示配置中心所在仓库的位置
-spring.cloud.config.server.git.uri=https://github.com/wqh8522/spring-cloud-config.git
-#仓库路径下的的相对搜索位置，可以配置多个
-spring.cloud.config.server.git.search-paths=config-client
-#git的用户名
-spring.cloud.config.server.git.username=username
-#git的密码
-spring.cloud.config.server.git.password=password
+
+##服务名称
+spring.application.name=config_server
+
+##注册中心地址
+eureka.client.service-url.defaultZone=http://eureka.yeshen.cn:8761/eureka/
+
+##远程仓库配置
+
+##git仓库地址
+spring.cloud.config.server.git.uri=https://github.com/chenyeshen/SpringCloudConfig.git
+
+##git仓库配置路径
+spring.cloud.config.server.git.searchPaths=application
+
+##git仓库分支
+spring.cloud.config.label=master
+
+##如果为公开仓库，用户名密码可不填
+##git仓库用户名
+#spring.cloud.config.server.git.username=
+
+##git仓库密码
+#spring.cloud.config.server.git.password=
 ```
 
 然后启动项目，如果成功启动，继续下面步骤。
 
 ## 仓库配置
 
-根据上面git配置信息指定的仓库位置创建一个config-client目录作为配置仓库，并新建一下4个文件：
+根据上面git配置信息指定的仓库位置创建一个config-client目录作为配置仓库，并新建一下3个文件：
 
-- wqh.properties： form=wqh_default_1.0
-- wqh-dev.properties：form=wqh_dev_1.0
-- wqh-prod.properties：form=wqh_prod_1.0
-- wqh-test.properties：form=wqh_test_1.0
+![](https://i.loli.net/2019/12/21/lnwdZ146MHFBmEx.png)
 
-因为使用的是git做配置仓库，所以SpringCloudConfig天然就支持对微服务应用配置信息的版本管理，所以在git仓库中添加一个分支，将上面的1.0改为2.0，以测试版本控制。这里对于git的操作省略。
-接下来可以通过浏览器、postman、curl等工具直接访问配置内容。配置信息的url和配置文件的映射关系如下：
+**application.yml**
 
-- `/{application}/{profile}[/{label}]`
-- `/{application}-{profile}.yml`或`/{application}-{profile}.properties`
-- `/{label}/{application}-{profile}.yml`或`/{label}/{application}-{profile}.properties`
+```
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles:
+    active: test
+```
 
-这里的url会映射`{application}-{profile}.yml`对应的配置文件。{label}对应git上不同的分支，默认是master。
-访问url：`http://localhost:9000/wqh/test/config-label`，该url的是要访问config-label分支，wqh应用的test环境。
-![img](https://segmentfault.com/img/remote/1460000012908858?w=742&h=415)
-可以看到该json返回了应用名wqh，环境名test，分支名config-label，以及test环境和默认环境配置的内容。配置服务器在从git中获取到配置信息后，实际上会存储一份在config-server的文件系统，也就是复制一份在本地存储。
+**application-test.yml**
+
+![](https://i.loli.net/2019/12/21/Fw73udmzRAgXcL4.png)
+
+**application-dev.yml**
+
+![](https://i.loli.net/2019/12/21/m8MphDVrzg1loTG.png)
+
+**测试结果1：**
+
+![](https://i.loli.net/2019/12/21/nLVvBG3YkhtZpyJ.png)
+
+**测试结果2：**
+
+![](https://i.loli.net/2019/12/21/mgjqEWYJwl2nOSB.png)
 
 ## 客户端配置
 
