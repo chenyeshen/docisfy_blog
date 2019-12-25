@@ -23,5 +23,11 @@
 - [SpringCloud分布式配置中心Config](/JAVA/SpringCloud/doc/SpringCloud分布式配置中心Config.md)
 * **【SpringCloud-Consumer】**
 - [支持的几种服务消费方式（RestTemplate、WebClient、Feign）](/JAVA/SpringCloud/doc/支持的几种服务消费方式（RestTemplate、WebClient、Feign）.md)
+* **【SpringCloudStream】**
+- [SpringCloudStream如何消费自己生产的消息](/JAVA/SpringCloud/doc/stream/SpringCloudStream如何消费自己生产的消息.md)
+- [SpringCloud-Stream整合RabbitMQ](/JAVA/SpringCloud/doc/stream/SpringCloud-Stream整合RabbitMQ.md)
+- [SpringCloud-Stream整合kafka](/JAVA/SpringCloud/doc/stream/SpringCloudStream整合kafka.md)
+- [SpringCloudStream同一通道根据消息内容分发不同的消费逻辑](/JAVA/SpringCloud/doc/stream/SpringCloudStream同一通道根据消息内容分发不同的消费逻辑.md)
+- [SpringCloudStream使用延迟消息实现定时任务（RabbitMQ）](/JAVA/SpringCloud/doc/stream/SpringCloudStream使用延迟消息实现定时任务（RabbitMQ）.md)
 
 

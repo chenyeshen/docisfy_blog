@@ -1,6 +1,6 @@
 # Elasticsearch用logstash增量导入Mysql数据
 
-## 前言：**
+## 前言
 
 logstash是什么？为什么需要logstash？援引[官网](https://link.zhihu.com/?target=https%3A//www.elastic.co/cn/products/logstash)的介绍：*Logstash 是开源的服务器端数据处理管道，能够同时从多个来源采集数据，转换数据，然后将数据发送到您最喜欢的 “存储库” 中。（我们的存储库当然是 Elasticsearch。）*
 
@@ -215,7 +215,9 @@ D:\logstash-6.2.3\bin>logstash.bat -f D:\logstash-6.2.3\config\logstash-mysql.co
 
 
 
-# 配置能够实现从 SQL Server 数据库中查询数据，并增量式的把数据库记录导入到 ES 中。
+
+
+### 配置能够实现从 SQL Server 数据库中查询数据，并增量式的把数据库记录导入到 ES 中。
 
 1. 查询的 SQL 语句在 statement_filepath => "/etc/logstash/statement_file.d/my_info.sql" 参数指定的文件中给出。
 2. 字段的转换由 add_field 参数完成。
@@ -280,11 +282,9 @@ SELECT
 
 ## 重要参数说明
 
-### JDBC（[Java](http://www.bing.com/knows/search?q=java_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80&mkt=zh-cn&mkt=zh-cn&form=BKACAI) Data Base Connectivity，[Java](http://www.bing.com/knows/search?q=java_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80&mkt=zh-cn&mkt=zh-cn&form=BKACAI)[java数据库连接](http://www.bing.com/knows/search?q=Java%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5&mkt=zh-cn&mkt=zh-cn&form=BKACAI)）参数
+JDBC（[Java](http://www.bing.com/knows/search?q=java_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80&mkt=zh-cn&mkt=zh-cn&form=BKACAI) Data Base Connectivity，[Java](http://www.bing.com/knows/search?q=java_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80&mkt=zh-cn&mkt=zh-cn&form=BKACAI)[java数据库连接](http://www.bing.com/knows/search?q=Java%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5&mkt=zh-cn&mkt=zh-cn&form=BKACAI)）参数
 
 如果要了解其它数据库，可以参考我的 <http://www.cnblogs.com/licongyu/p/5535833.html>
-
-
 
 ```
 jdbc_driver_library => "/etc/logstash/driver.d/sqljdbc_2.0/enu/sqljdbc4.jar"         //jdbc sql server 驱动,各个数据库都有对应的驱动，需自己下载
@@ -302,9 +302,9 @@ jdbc_password =>      //配置数据库密码
 schedule => "* * * * *"
 ```
 
+
+
 ### 重要参数设置
-
-
 
 ```
 //是否记录上次执行结果, 如果为真,将会把上次执行到的 tracking_column 字段的值记录下来,保存到 last_run_metadata_path 指定的文件中
