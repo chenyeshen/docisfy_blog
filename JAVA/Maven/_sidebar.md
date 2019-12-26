@@ -1,3 +1,3 @@
 <!-- docs/_sidebar.md -->
-- [2019-08-24-maven导入alipay-sdk-java包到本地仓库](/JAVA/Maven/doc/2019-08-24-maven导入alipay-sdk-java包到本地仓库.md)
+- [Maven生成可以直接运行的jar包的多种方式](/JAVA/Maven/doc/Maven生成可以直接运行的jar包的多种方式.md)
 

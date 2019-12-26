@@ -2,6 +2,7 @@
 - [Java基础](/面试题/SpringBoot/doc/java基础.md)
 - [集合](/面试题/SpringBoot/doc/集合.md)
 - [多线程](/面试题/SpringBoot/doc/多线程.md)
+- [40个Java多线程面试题总结](/面试题/SpringBoot/doc/40个Java多线程面试题总结.md)
 - [JVM](/面试题/SpringBoot/doc/JVM.md)
 - [设计模式](/面试题/SpringBoot/doc/设计模式.md)
 - [Spring](/面试题/SpringBoot/doc/Spring.md)
@@ -11,5 +12,6 @@
 - [Redis](/面试题/SpringBoot/doc/Redis.md)
 - [RabbitMq](/面试题/SpringBoot/doc/RabbitMq.md)
 - [Shrio](/面试题/SpringBoot/doc/Shrio.md)
+- [Nginx](/面试题/SpringBoot/doc/面试官常问的Nginx的几个问题.md)
 - [SpringBoot面试，一个问题就干趴下了](/面试题/SpringBoot/doc/SpringBoot面试，一个问题就干趴下了.md)
 

@@ -4,10 +4,13 @@
 - [springboot项目个人通用构建](/JAVA/SpringBoot/doc/springboot项目个人通用构建.md)
 - [SpringBoo配置文件加载](/JAVA/SpringBoot/doc/SpringBoo配置文件加载.md)
 - [关于SpringBoot上传图片的几种方式](/JAVA/SpringBoot/doc/关于SpringBoot上传图片的几种方式.md)
+* **【Sessio】**
+- [SpringBoot分布Sessio共享Redis](/JAVA/SpringBoot/doc/SpringBoot分布Sessio共享Redis-Control-Allow-Origin问题.md)
 * **【跨域】**
 - [SpringBoot跨域Access-Control-Allow-Origin问题](/JAVA/SpringBoot/doc/SpringBoot跨域Access-Control-Allow-Origin问题.md)
 * **【日志】**
 - [SpringBoot日志组件logback实现日志分级打印](/JAVA/SpringBoot/doc/SpringBoot日志组件logback实现日志分级打印.md)
+- [SpringBoot Logback邮件通知](/JAVA/SpringBoot/doc/SpringBootLogback邮件通知.md)
 * **【Swagger】**
 - [SpringBoot整合Swagger](/JAVA/SpringBoot/doc/SpringBoot整合Swagger.md)
 * **【RabbitMQ】**
@@ -21,12 +24,16 @@
 - [SpringBoot整合KafKa集群的集成](/JAVA/SpringBoot/doc/SpringBoot整合KafKa集群的集成.md)
 * **【Mybatis】**
 - [SpringBoot整合Mybatis实现多数据源](/JAVA/SpringBoot/doc/SpringBoot整合Mybatis实现多数据源.md)
+* **【Elasticsearch】**
+- [springboot整合Elasticsearch实现商品搜索](/JAVA/SpringBoot/doc/springboot整合Elasticsearch实现商品搜索.md)
 * **【JWT】**
 - [SpringBoot使用JWT实现登录验证](/JAVA/SpringBoot/doc/SpringBoot使用JWT实现登录验证.md)
 * **【Excel】**
 - [SpringBoot集成EsayPoi(Excel导入导出)](/JAVA/SpringBoot/doc/SpringBoot集成EsayPoi(Excel导入导出).md)
 * **Quartz**
 - [SpringBoot+Quartz实现动态配置定时任务](/JAVA/SpringBoot/doc/SpringBoot+Quartz实现动态配置定时任务.md)
+* **登录授权**
+- [spring-boot-shiro-jwt-redis实现登陆授权功能](/JAVA/SpringBoot/doc/spring-boot-shiro-jwt-redis实现登陆授权功能.md)
 * **【第三方登录】**
 - [SpringBoot集成第三方登录(QQ和微信)](/JAVA/SpringBoot/doc/SpringBoot集成第三方登录(QQ和微信).md)
 - [Springboot网站第三方登录——微信登录](/JAVA/SpringBoot/doc/Springboot网站第三方登录——微信登录.md)
