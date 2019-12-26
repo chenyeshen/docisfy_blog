@@ -8,17 +8,16 @@
   * [**Flume**](/大数据/Flume/doc/Flume框架基础.md)
   * [**Scala**](/大数据/Scala/doc/Scala安装.md)
   * [**Spark**](/大数据/Spark/doc/Spark的安装及配置（单机版）.md)
-* **JAVA**
-  * [**集合**](/JAVA/Collection集合/README.md)
-  * [**多线程**](/JAVA/Thread多线程/README.md)
-  * [**JVM**](/JAVA/JVM/README.md)
-* **Spring家族**
+* **Spring**
   * [**Spring**](/JAVA/Spring/doc/Spring学习笔记.md)
   * [**SpringBatch**](/JAVA/SpringBatch/doc/springbatch入门笔记.md)
   * [**SpringBoot**](/JAVA/SpringBoot/doc/SpringBoot学习笔记.md)
   * [**SpringCloud**](/JAVA/SpringCloud/doc/SpringCloud服务治理Eureka.md)
   * [**SpringCloudAlibaba**](/JAVA/SpringCloudAlibaba/doc/SpringCloudAlibaba之Nacos入门.md)
-* **框架**
+* **Java**
+  * [**集合**](/JAVA/Collection集合/README.md)
+  * [**多线程**](/JAVA/Thread多线程/README.md)
+  * [**JVM**](/JAVA/JVM/README.md)
   * [**TK.Mapper**](/JAVA/通用mapper/doc/通用TkMapper时开启Mybatis的二级缓存.md)
   * [**Redis**](/JAVA/Redis/doc/Redis详解.md)
   * [**Shiro**](/JAVA/Shiro/doc/Shiro权限注解.md)
@@ -26,19 +25,18 @@
   * [**JWT**](/JAVA/JWT/doc/JWT初篇.md)
   * [**Swagger**](/JAVA/Swagger/doc/swagger2注解说明.md)  
   * [**RabbiMq**](/JAVA/RabbitMq/doc/windows10环境下的RabbitMQ安装步骤.md) 
-  * [**Elasticsearch**](/JAVA/Elasticsearch/doc/Elasticsearch用logstash增量导入Mysql数据.md) 
-* **设计模式**
-  * [**笔记imocc**](/imocc/design_pattern/README.md)
-  * [**Utils工具类**](/Utils工具类/doc/spring常用工具集合.md)
-* **elasticsearch**
-  * [**elasticsearch 核心知识篇**](/elasticsearch-core/index.md)
-  * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)
-* **面试题**
-  * [**Java**](/面试题/SpringBoot/doc/java基础.md)
+  * [**Elasticsearch**](/JAVA/Elasticsearch/doc/Elasticsearch用logstash增量导入Mysql数据.md)
 * **Linux**
   * [**Linux初级入门**](/LINUX/Linux初级入门/doc/linxu随手记.md)
   * [**Linux中级篇**](/LINUX/Linux中级篇/doc/基础命令常用命令.md)
-* **进阶学习** 
+* [**Docker**](/docker/doc/docker安装.md)   
+* **Elasticsearch**
+  * [**elasticsearch 核心知识篇**](/elasticsearch-core/index.md)
+  * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)
+* **设计模式**
+  * [**笔记imocc**](/imocc/design_pattern/README.md)
+  * [**Utils工具类**](/Utils工具类/doc/spring常用工具集合.md)  
+* **分布式** 
   * [**缓存**](/缓存/服务本地堆缓存/doc/SpringBoot整合Ehcache实现缓存功能.md)
   * [**分布式**](/分布式/分布式锁/doc/springboot整合redisson实现分布式锁.md)
 * **项目** 
@@ -46,7 +44,8 @@
   * [**阿里云**](/项目/阿里云/阿里云的短信服务发送手机验证码.md)  
   * [**支付宝**](/项目/支付宝/支付宝集成-当面付.md)  
   * [**微信**](/项目/微信/微信支付集成-扫码支付.md)  
-  * [**小功能**](/项目/小功能/SpringBoot+Quartz+SpringBatch实现动态配置定时任务及批处理数据库读取导入多个文件.md)  
-* **其他** 
-  * [那些事](/其他/others/doc/内网穿透工具-frp在Windos服务器搭建.md)    
-  
+  * [**小功能**](/项目/小功能/SpringBoot+Quartz+SpringBatch实现动态配置定时任务及批处理数据库读取导入多个文件.md)
+* [**面试题**](/面试题/SpringBoot/doc/java基础.md)  
+* [**其他**](/其他/others/doc/内网穿透工具-frp在Windos服务器搭建.md) 
+   
+
