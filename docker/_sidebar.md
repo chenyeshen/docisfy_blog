@@ -1,23 +1,20 @@
 <!-- docs/_sidebar.md -->
-* **docker安装**
-- [docker安装](/docker/doc/docker安装.md)
-* **docker命令**
+* **命令**
 - [docker常用命令](/docker/doc/docker常用命令.md)
 - [解决：-bash docker](/docker/doc/解决：-bash-docker.md)
 * **docker入门**
+- [docker安装](/docker/doc/docker安装.md)
 - [Docker入门笔记](/docker/doc/Docker入门笔记.md)
 - [Docker入门（镜像、容器、仓库）](/docker/doc/Docker入门（镜像、容器、仓库）.md)
 - [使用docker-compose快速构建集群](/docker/doc/使用docker-compose快速构建集群.md)
 - [Docker入门使用Docker Compose](/docker/doc/Docker入门使用Docker-Compose.md)
 - [Error response from daemon: Container is not running](/docker/doc/Docker-Compose-erro-Compose.md)
-* **Zookeeper集群**
+* **Zookeeper**
 - [Docker搭建Zookeeper集群](/docker/doc/Docker搭建Zookeeper集群.md)
-* **Kafka集群**
+* **Kafka**
 - [Docker搭建Kafka集群](/docker/doc/Docker搭建Kafka集群.md)
 - [Docker快速搭建Kafka 1.x集群](/docker/doc/Docker快速搭建Kafka-1.x集群.md)
-* **Zookeeper集群**
-- [Docker入门笔记](/docker/doc/Docker入门笔记.md)
-* **RabbitMQ集群**
+* **RabbitMQ**
 - [使用Docker构建RabbitMQ高可用负载均衡集群](/docker/doc/使用Docker构建RabbitMQ高可用负载均衡集群.md)
 * **其他**
 - [使用Maven插件构建Docker镜像](/docker/doc/使用Maven插件构建Docker镜像.md)
