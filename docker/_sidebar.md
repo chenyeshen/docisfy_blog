@@ -10,11 +10,10 @@
 - [解决：-bash docker](/docker/doc/解决：-bash-docker.md)
 - [使用docker-compose快速构建集群](/docker/doc/使用docker-compose快速构建集群.md)
 * **Zookeeper**
-- [Docker搭建Zookeeper集群](/docker/doc/Docker搭建Zookeeper集群.md)
-- [Docker搭建Zookeeper+Kafka单机版](/docker/doc/Docker搭建Zookeeper+Kafka单机版.md)
+- [Docker搭建Zookeeper分布式集群](/docker/doc/Docker搭建Zookeeper分布式集群.md)
 * **Kafka**
-- [Docker搭建Kafka集群](/docker/doc/Docker搭建Kafka集群.md)
-- [Docker快速搭建Kafka 1.x集群](/docker/doc/Docker快速搭建Kafka-1.x集群.md)
+- [Docker快速搭建Kafka单机版.md](/docker/doc/Docker快速搭建Kafka单机版.md.md)
+- [使用Docker快速搭建Zookeeper和kafka集群](/docker/doc/使用Docker快速搭建Zookeeper和kafka集群.md)
 * **RabbitMQ**
 - [使用Docker构建RabbitMQ高可用负载均衡集群](/docker/doc/使用Docker构建RabbitMQ高可用负载均衡集群.md)
 * **Dockerfile**

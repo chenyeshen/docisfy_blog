@@ -205,12 +205,50 @@ f138451dd21c        zookeeper-3:3.4.11   "/docker-entrypoint.…"   24 seconds a
 
 ```
 
-## 总结
 
-至此我们今天要搭建的四台zk实例组成的集群已经搞定了，有没有感觉到有了Docker 简直是神奇啊，只有亲身体会下才能感觉他的便利。
 
-欢迎在留言区讨论，今天就到这里啦，可以愉快的学习第zk的底层原理了。
 
-Docker 入门基础知识，可以看我整理的这篇文章：
 
-[Docker入门（镜像、容器、仓库)](https://www.jianshu.com/p/251e55d9f9b3)
+## 一台机器搭建集群
+
+
+
+```
+version: '3'
+services:
+    zoo1:
+        image: wurstmeister/zookeeper   
+        container_name: zoo1
+        restart: always
+        hostname: zoo1            
+        ports:
+            - 2181:2181 
+        environment:       
+            ZOO_MY_ID: 1   
+            ZOO_SERVERS: server.1=0.0.0.0:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181  
+        
+    zoo2:
+        image: wurstmeister/zookeeper
+        container_name: zoo2
+        restart: always
+        hostname: zoo2        
+        ports:
+            - 2182:2181
+        environment:
+            ZOO_MY_ID: 2
+            ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=0.0.0.0:2888:3888;2181 server.3=zoo3:2888:3888;2181
+       
+ 
+    zoo3:
+        image: wurstmeister/zookeeper
+        container_name: zoo3
+        restart: always
+        hostname: zoo3     
+        ports:
+            - 2183:2181
+        environment:
+            ZOO_MY_ID: 3
+            ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=0.0.0.0:2888:3888;2181
+       
+```
+

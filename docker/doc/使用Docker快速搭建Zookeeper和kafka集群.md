@@ -1,4 +1,4 @@
-
+# 使用Docker快速搭建Zookeeper和kafka集群
 
 #### 镜像选择
 
@@ -28,7 +28,7 @@
 
 #### zk集群的docker-compose.yml
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
 
 ```
 version: '3.4'
@@ -91,13 +91,11 @@ networks:
       name: br17219
 ```
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
 
 #### kafka集群的docker-compose.yml
 
-> kfkluster少拼了个c…
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
 
 ```
 version: '2'
@@ -172,7 +170,7 @@ networks:
       name: br17219
 ```
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
+
 
 ### 结果查看和测试
 
