@@ -35,7 +35,7 @@
   * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)
 * **设计模式**
   * [**笔记imocc**](/imocc/design_pattern/README.md)
-  * [**Utils工具类**](/Utils工具类/doc/spring常用工具集合.md)  
+  * [**Utils工具类**](/Utils工具类/doc/Utils工具集合.md)  
 * **分布式** 
   * [**缓存**](/缓存/服务本地堆缓存/doc/SpringBoot整合Ehcache实现缓存功能.md)
   * [**分布式**](/分布式/分布式锁/doc/springboot整合redisson实现分布式锁.md)
