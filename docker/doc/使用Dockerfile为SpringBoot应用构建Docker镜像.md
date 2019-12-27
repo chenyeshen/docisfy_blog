@@ -123,7 +123,25 @@ RUN bash -c 'touch /mall-tiny-docker-file.jar'
 
 ## 使用Dockerfile构建SpringBoot应用镜像
 
+### 下载Java8
+
+```
+docker pull java:8
+```
+
 ### 编写Dockerfile文件
+
+参考一：
+
+```
+FROM java:8
+VOLUME  /tmp
+ADD registry-center.jar  /app.jar
+EXPOSE 8761
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+
+参考二：
 
 ```
 # 该镜像需要依赖的基础镜像
