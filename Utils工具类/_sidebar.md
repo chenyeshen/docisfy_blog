@@ -1,6 +1,7 @@
 <!-- docs/_sidebar.md -->
 - [Utils工具集合](/Utils工具类/doc/Utils工具集合.md)
 - [Config工具集合](/Utils工具类/doc/Config工具集合.md)
+- [PasswordUtil加密解密一套服务工具](/Utils工具类/doc/PasswordUtil加密解密一套服务工具.md)
 - [spring常用工具集合](/Utils工具类/doc/spring常用工具集合.md)
 - [Redis，Json相关工具类](/Utils工具类/doc/Redis，Json相关工具类.md)
 - [HttpUtil工具类](/Utils工具类/doc/HttpUtil工具类.md)
@@ -16,4 +17,4 @@
 - [CommonUtils](/Utils工具类/doc/CommonUtils.md)
 - [SpringContextUtils](/Utils工具类/doc/SpringContextUtils.md)
 - [Result](/Utils工具类/doc/Result.md)
-- [PasswordUtil](/Utils工具类/doc/PasswordUtil.md)
+
