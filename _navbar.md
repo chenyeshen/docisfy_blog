@@ -30,7 +30,7 @@
   * [**Linux初级入门**](/LINUX/Linux初级入门/doc/linxu随手记.md)
   * [**Linux中级篇**](/LINUX/Linux中级篇/doc/基础命令常用命令.md)
 * [**Docker**](/docker/doc/docker常用命令.md)   
-* [**Promethus**](/Promethus/doc/Promethus(普罗米修斯监控.md)   
+* [**Promethus**](/Promethus/doc/Promethus普罗米修斯监控.md)   
 * **Elasticsearch**
   * [**elasticsearch 核心知识篇**](/elasticsearch-core/index.md)
   * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)
