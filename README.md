@@ -80,7 +80,7 @@ docsify serve docs
 # 喵星人
 > 好好学习 天天向上.
 * good good study
-[GitHub](https://github.com/yeshen/docsify)
+[GitHub](https://github.com/mukeyeshen/docsify)
 [Get Started](#quick-start)
 
 ```
