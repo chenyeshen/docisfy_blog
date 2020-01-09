@@ -10,7 +10,7 @@
 
 第一步：在应用主类中增加注解支持的配置：
 
-```
+```java
 @SpringBootApplication
 public class TestApplication {
 
@@ -30,9 +30,9 @@ public class TestApplication {
 
 第二步：在需要通过Sentinel来控制流量的地方使用`@SentinelResource`注解，比如下面以控制Service逻辑层的某个方法为例：
 
-```
+```java
 @Slf4j
-@Service
+@Servicejava
 public class TestService {
 
     @SentinelResource(value = "doSomeThing")
@@ -54,7 +54,7 @@ public class TestService {
 
 第一步：在Web层调用这个被保护的方法：
 
-```
+```java
 @RestController
 public class TestController {
 
@@ -95,7 +95,7 @@ com.alibaba.csp.sentinel.slots.block.flow.FlowException: null
 
 默认情况下，Sentinel对控制资源的限流处理是直接抛出异常，也就是上一节中贴出的日志内容。在没有合理的业务承接或者前端对接情况下可以这样，但是正常情况为了更好的用户业务，都会实现一些被限流之后的特殊处理，我们不希望展示一个生硬的报错。那么只需要基于上面的例子做一些加工，比如：
 
-```
+```java
 @Slf4j
 @Service
 public class TestService {
@@ -129,7 +129,7 @@ public class TestService {
 
 第一步：与限流控制一样，使用`@SentinelResource`注解标记资源点，比如：
 
-```
+```java
 @Slf4j
 @Service
 public class TestService {
@@ -148,7 +148,7 @@ public class TestService {
 
 第二步：在Web层调用这个被保护的方法：
 
-```
+```java
 @RestController
 public class TestController {
 
@@ -182,7 +182,7 @@ com.alibaba.csp.sentinel.slots.block.degrade.DegradeException: null
 
 在Sentinel中定义熔断的降级处理方法非常简单，与Hystrix非常相似。只需要使用`@SentinelResource`注解的`fallback`属性来指定具体的方法名即可。这里也需要注意传参与返回必须一致。比如：
 
-```
+```java
 @Slf4j
 @Service
 public class TestService {

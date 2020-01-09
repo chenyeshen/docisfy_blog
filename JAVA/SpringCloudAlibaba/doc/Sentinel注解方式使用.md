@@ -44,7 +44,7 @@ blockHandler 是可选的。如果使用blockHandlerClass，必须搭配blockHan
 
 ### 改造client 服务
 
-```
+```xml
        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
@@ -53,7 +53,7 @@ blockHandler 是可选的。如果使用blockHandlerClass，必须搭配blockHan
 
 bootstrap.yml 配置文件
 
-```
+```yaml
 spring:
     cloud:
         sentinel:
@@ -85,7 +85,7 @@ spring:
 
 nacos 创建 cloud-discovery-client-dev-sentinel 配置文件
 
-```
+```json
 [
     {
         "resource": "client:log:save",
@@ -128,7 +128,7 @@ nacos 创建 cloud-discovery-client-dev-sentinel 配置文件
 
 创建 BackHandlerClass DiscoveryClientControllerBackHandler
 
-```
+```java
 package com.xian.cloud.common.handler;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.xian.cloud.entity.UserEntity;
@@ -153,7 +153,7 @@ public class DiscoveryClientControllerBackHandler {
 
 创建 FallBackHandlerClass
 
-```
+```java
 package com.xian.cloud.common.handler;
 import com.xian.cloud.entity.UserEntity;
 import lombok.extern.slf4j.Slf4j;
@@ -177,7 +177,7 @@ public class DiscoveryClientControllerFallBackHandler {
 
 对外接口DiscoveryClientController 添加接口
 
-```
+```java
 @SentinelResource(
             value = "client:fegin:test",
             blockHandler = "defaultMessage",
@@ -216,7 +216,7 @@ public class DiscoveryClientControllerFallBackHandler {
 
 UserServiceImpl 方法
 
-```
+```java
  @Override
     @Transactional
     @SentinelResource(
