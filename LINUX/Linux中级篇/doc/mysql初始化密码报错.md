@@ -1,6 +1,6 @@
 # mysql5.7初始化密码报错 ERROR 1820 (HY000): You must reset your password using ALTER USER statement before
 
-### mysql初始化密码常见报错问题
+## mysql初始化密码常见报错问题
 
 **1，mysql5.6是密码为空直接进入数据库的，但是mysql5.7就需要初始密码**
 

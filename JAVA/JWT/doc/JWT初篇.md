@@ -1,26 +1,12 @@
----
-layout:     post
-title:      JWT初篇（json web token）
-subtitle:   学习笔记
-date:       2019-09-01
-author:     chenyeshen
-header-img: img/img13.jpg
-catalog: true
-tags:
-    - Java
-    - JWT
+# JWT初篇
 
----
-
-
-
-### 为什么使用JWT？
+## 为什么使用JWT？
 
 随着技术的发展，分布式web应用的普及，通过session管理用户登录状态成本越来越高，因此慢慢发展成为token的方式做登录身份校验，然后通过token去取redis中的缓存的用户信息，随着之后jwt的出现，校验方式更加简单便捷化，无需通过redis缓存，而是直接根据token取出保存的用户信息，以及对token可用性校验，单点登录更为简单。
 
 
 
-### jwt依赖 pom.xml
+## jwt依赖 pom.xml
 
 ```
 <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
@@ -34,7 +20,7 @@ tags:
 
 
 
-### jwtUtils.java
+## jwtUtils.java
 
 ```
 package com.yeshen.xdvideo.utils;
@@ -92,7 +78,7 @@ public class JwtUtil {
 
 
 
-### 代码测试
+## 代码测试
 
 ```
 package com.yeshen.xdvideo;
@@ -140,12 +126,12 @@ public class XdvideoApplicationTests {
 
 
 
-### 获取token
+## 获取token
 
 ![file](https://chenyeshen.oss-cn-shenzhen.aliyuncs.com/oneblog/article/20190824185958287.png)
 
 
 
-### 异常
+## 异常
 
 ![file](https://chenyeshen.oss-cn-shenzhen.aliyuncs.com/oneblog/article/20190824212910257.png)

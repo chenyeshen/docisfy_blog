@@ -1,6 +1,6 @@
 # SpringBoot整合elasticsearch
 
-### pom.xml
+## pom.xml
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -71,7 +71,7 @@
 
 
 
-### application.yml
+## application.yml
 
 ```
 yeshen:
@@ -85,7 +85,7 @@ spring:
 
 
 
-### ElasticsearchConfig
+## ElasticsearchConfig
 
 ```
 package com.example.demo;
@@ -118,7 +118,7 @@ public class ElasticsearchConfig {
 
 
 
-### 单元测试DemoApplicationTests
+## 单元测试DemoApplicationTests
 
 ```
 package com.example.demo;

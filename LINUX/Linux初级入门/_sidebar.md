@@ -1,4 +1,3 @@
-<!-- docs/_sidebar.md -->
 - [Linux怎么恢复root密码](/LINUX/Linux初级入门/doc/Linux怎么恢复root密码.md)
 - [vi和vim快捷键](/LINUX/Linux初级入门/doc/vi和vim快捷键.md)
 - [关机&重启命令](/LINUX/Linux初级入门/doc/关机&重启命令.md)

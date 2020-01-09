@@ -1,16 +1,16 @@
 # Centos上将zookeeper和kafka设置为开机自启
 
-### 一、首先kafka的安装
+## 一、首先kafka的安装
 
-### 二、配置服务文件
+## 二、配置服务文件
 
-#### 　　1、进入服务配置文件下　　　
+### 　　1、进入服务配置文件下　　　
 
 ```
 cd /lib/systemd/system
 ```
 
-#### 　　2、生成 zookeeper的配置文件,并添加内容
+### 　　2、生成 zookeeper的配置文件,并添加内容
 
 　　　　
 
@@ -36,7 +36,7 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 
-#### 　　3、生成kafka.service配置文件，并添加内容
+### 　　3、生成kafka.service配置文件，并添加内容
 
 ```
 vim kafka.service
@@ -59,14 +59,14 @@ WantedBy=multi-user.target
 
 ```
 
-#### 　　4、刷新配置文件
+### 　　4、刷新配置文件
 
 ```
 systemctl daemon-reload
 
 ```
 
-#### 　　5、将zookeeper和kafka加入开机服务
+### 　　5、将zookeeper和kafka加入开机服务
 
 ```
 systemctl enable zookeeper
@@ -77,7 +77,7 @@ systemctl enable kafka
 
 　　![img](https://chenyeshen.oss-cn-shenzhen.aliyuncs.com/oneblog/article/20191117201555355.png)
 
-#### 　　6、开启zookeeper服务并查看状态
+### 　　6、开启zookeeper服务并查看状态
 
 ```
 systemctl start zookeeper
@@ -88,7 +88,7 @@ systemctl status zookeeper
 
 　　![img](https://chenyeshen.oss-cn-shenzhen.aliyuncs.com/oneblog/article/20191117201559587.png)
 
-#### 　　7、开启kafka服务并查看状态
+### 　　7、开启kafka服务并查看状态
 
 ```
 systemctl start kafka

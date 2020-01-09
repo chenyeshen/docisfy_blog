@@ -1,4 +1,10 @@
 <!-- docs/_sidebar.md -->
+- [面试时，千万当心这几个容易犯错的问题](/面试题/SpringBoot/doc/面试时，千万当心这几个容易犯错的问题.md)
+- [找工作评估](/面试题/SpringBoot/doc/找工作评估.md)
+- [找工作选择](/面试题/SpringBoot/doc/找工作选择.md)
+- [技术面试题](/面试题/SpringBoot/doc/技术面试题.md)
+- [Java技术要求](/面试题/SpringBoot/doc/Java技术要求.md)
+- [Java高级工程师面试总结](/面试题/SpringBoot/doc/Java高级工程师面试总结.md)
 - [Java基础](/面试题/SpringBoot/doc/java基础.md)
 - [集合](/面试题/SpringBoot/doc/集合.md)
 - [多线程](/面试题/SpringBoot/doc/多线程.md)

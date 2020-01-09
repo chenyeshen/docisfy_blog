@@ -1,6 +1,6 @@
 # CentOS7 搭建Kafka
 
-### 安装
+## 安装
 
 官方的下载页有source和binary两个版本，这里下载的binary，source版本你得自己编译后才能用。
 
@@ -11,7 +11,7 @@ mv kafka_2.11-1.1.0 /opt/kafka_1.1
 cd /opt/kafka_1.1
 ```
 
-### 配置
+## 配置
 
 kafak的配置文件在/opt/kafka_1.1/config下叫server.propertie，释义如下：
 
@@ -69,7 +69,7 @@ zookeeper.connect=192.168.253.133:12181
 
 QuorumPeerMain是zookeeper的守护进程，kafka是kafka的守护进程。
 
-### 常用命令
+## 常用命令
 
 - 创建主题
 

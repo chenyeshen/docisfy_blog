@@ -1,6 +1,6 @@
 # Redis，Json相关工具类
 
-### Redis
+## Redis
 
 1、快速安装
 
@@ -21,7 +21,7 @@
 
 > 所以可以指定bind多个IP,这样就只有指定IP才能连接redis了
 
-### 整合redis
+## 整合redis
 
 [官网](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.spring.io%2Fspring-boot%2Fdocs%2F2.1.0.BUILD-SNAPSHOT%2Freference%2Fhtmlsingle%2F%23boot-features-redis)
 
@@ -122,7 +122,7 @@ spring.redis.pool.max-wait=1000
 
   > 对应的方法分别是opsForValue()、opsForList()、opsForHash()、opsForSet()、opsForZSet()
 
-### 基础代码
+## 基础代码
 
 ```
 @RequestMapping("v1/redis")
@@ -146,9 +146,9 @@ public class RedisController {
 
 ```
 
-### 工具类
+## 工具类
 
-### 对象字符串互转（依赖于默认的jackson）
+## 对象字符串互转（依赖于默认的jackson）
 
 ```
 public class JsonUtils {
@@ -184,7 +184,7 @@ public class JsonUtils {
 
 ```
 
-### 返回的JSON对象的工具类(例如状态码封装)
+## 返回的JSON对象的工具类(例如状态码封装)
 
 ```
 public class JsonData implements Serializable {
@@ -270,7 +270,7 @@ public class JsonData implements Serializable {
 
 ```
 
-### redis工具类(对StringRedisTemplate的封装)
+## redis工具类(对StringRedisTemplate的封装)
 
 ```
 @Component

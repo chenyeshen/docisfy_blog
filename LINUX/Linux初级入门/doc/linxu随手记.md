@@ -1,18 +1,18 @@
-### Centos 7 firewall 命令：
+## Centos 7 firewall 命令：
 
-##### 查看已经开放的端口：
+## 查看已经开放的端口：
 
 ```
 firewall-cmd --list-ports
 ```
 
-##### 开启端口
+## 开启端口
 
 ```
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 ```
 
-##### 命令含义：
+## 命令含义：
 
 –zone #作用域
 
@@ -20,7 +20,7 @@ firewall-cmd --zone=public --add-port=80/tcp --permanent
 
 –permanent #永久生效，没有此参数重启后失效
 
-##### 重启防火墙
+## 重启防火墙
 
 ```
 firewall-cmd --reload #重启firewall systemctl stop firewalld.service #停止firewall systemctl disable firewalld.service #禁止firewall开机启动
@@ -29,7 +29,7 @@ firewall-cmd --state #查看默认防火墙状态（关闭后显示notrunning，
 
 
 
-### 设置Redis服务开机启动&开启服
+## 设置Redis服务开机启动&开启服
 
 ```
 设置Redis服务开机启动
@@ -41,13 +41,13 @@ sudo systemctl enable redis
 sudo systemctl start redis
 ```
 
-### 创建全局命令
+## 创建全局命令
 
 ```
 ln -s /usr/local/nginx/sbin/nginx /usr/bin/nginx   
 ```
 
-### 安装基础依赖
+## 安装基础依赖
 
 ```
 #安装基础依赖包

@@ -20,7 +20,7 @@ HOSTNAME=hadoophost
 
 ```
 
-### **重启系统hosts生效**
+## **重启系统hosts生效**
 
 ```
 [root@hadoophost]# reboot

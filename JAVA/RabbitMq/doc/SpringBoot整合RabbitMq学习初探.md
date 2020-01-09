@@ -1,6 +1,6 @@
 # SpringBoot 整合RabbitMq 学习初探
 
-### pom.xml
+## pom.xml
 
 ```
 dependency>
@@ -9,7 +9,7 @@ dependency>
 </dependency>
 ```
 
-### application.properties
+## application.properties
 
 ```
 spring.rabbitmq.host=localhost
@@ -63,7 +63,7 @@ public class User   {
 
 
 
-### 队列 TestQueueConfig.java
+## 队列 TestQueueConfig.java
 
 ```
 package com.yeshen.rabbitmq_demo.test2;
@@ -85,7 +85,7 @@ public class TestQueueConfig {
 
 
 
-### 发送者 UserSender.java
+## 发送者 UserSender.java
 
 ```
 package com.yeshen.rabbitmq_demo.test2;
@@ -109,7 +109,7 @@ public class UserSender {
 
 
 
-### 接收者 UserReciever.java
+## 接收者 UserReciever.java
 
 ```
 package com.yeshen.rabbitmq_demo.test2;
@@ -131,7 +131,7 @@ public class UserReciever {
 
 ```
 
-### 单元测试
+## 单元测试
 
 ```
 package com.yeshen.rabbitmq_demo;

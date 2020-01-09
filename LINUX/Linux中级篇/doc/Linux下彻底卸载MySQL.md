@@ -4,7 +4,7 @@
 
 ​    首先介绍一下本人的环境，本人使用的是CentOS6.5系统，MySQL使用的是5.5版本。
 
-### 一、查看MySQL的安装情况
+## 一、查看MySQL的安装情况
 
 ​    使用以下命令查看当前安装mysql情况，查找以前是否装有mysql。
 
@@ -17,9 +17,9 @@ MySQL-server-5.5.25a-1.rhel5
 
 ​    如果之前安装了MySQL，那么会出现如上的显示。
 
-### 二、卸载MySQL
+## 二、卸载MySQL
 
-#### 1、停止服务
+### 1、停止服务
 
 ​    卸载MySQL之前，需要停止mysql服务。使用如下命令进行停止服务：
 
@@ -27,7 +27,7 @@ MySQL-server-5.5.25a-1.rhel5
 service mysql stop
 ```
 
-#### 2、卸载MySQL
+### 2、卸载MySQL
 
 ​    卸载之前安装的mysql，卸载命令如下：
 
@@ -50,9 +50,9 @@ rpm -ev MySQL-client-5.5.25a-1.rhel5 --nodeps
 rpm -e --noscripts MySQL-client-5.5.25a-1.rhel5
 ```
 
-### 三、删除MySQL目录
+## 三、删除MySQL目录
 
-#### 1、查看目录
+### 1、查看目录
 
 ​    查找之前安装mysql使用的目录，命令及结果如下：
 
@@ -66,7 +66,7 @@ find / -name mysql
 
 ​    本人这里有三个目录为MySQL使用的目录。
 
-#### 2、删除目录
+### 2、删除目录
 
 ​    删除对应的mysql目录，命令如下：
 
@@ -78,7 +78,7 @@ rm -rf /usr/lib64/mysql
 
 ​    这里删除的目录是上面查找到的目录，上面查找到的所有目录都要删除。
 
-#### 3、删除文件
+### 3、删除文件
 
 ​    卸载后/etc/my.cnf不会删除，需要进行手工删除，命令如下：
 
@@ -86,7 +86,7 @@ rm -rf /usr/lib64/mysql
 rm -rf /etc/my.cnf
 ```
 
-### 四、检查卸载
+## 四、检查卸载
 
 ​    最后再次使用rpm命令进行查看是否安装mysql，命令如下。
 

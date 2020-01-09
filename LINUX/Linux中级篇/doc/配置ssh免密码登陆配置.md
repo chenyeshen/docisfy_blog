@@ -1,6 +1,6 @@
 # 配置ssh免密码登陆配置
 
-###  1. 查看.ssh文件
+## 1. 查看.ssh文件
 
 ```
 [root@localhost ~]# cd ~
@@ -25,7 +25,7 @@ drwx------.  2 root root   80 11月 12 12:29 .ssh
 
 ![](https://i.loli.net/2019/11/12/T3tO7rkpAUu6f9W.png)
 
-### 2. 进入.ssh目录下
+## 2. 进入.ssh目录下
 
 ```
 [root@localhost ~]# cd .ssh/
@@ -36,7 +36,7 @@ known_hosts
 
 ![](https://i.loli.net/2019/11/12/BkZp9KYszOgAhxj.png)
 
-### 3.ssh生成秘钥
+## 3.ssh生成秘钥
 
 ```
 [root@localhost .ssh]# ssh-keygen -t rsa
@@ -67,7 +67,7 @@ The key's randomart image is:
 
 ![](https://i.loli.net/2019/11/12/xwAquaDIRzQjHnC.png)
 
-### 4.复制公钥
+## 4.复制公钥
 
 ```
 [root@localhost .ssh]# cp  id_rsa.pub  authorized_keys
@@ -75,7 +75,7 @@ The key's randomart image is:
 
 ![](https://i.loli.net/2019/11/12/KUuOpc1VWdMZBsf.png)
 
-### 5.ssh登录本地测试成功
+## 5.ssh登录本地测试成功
 
 ```
 [root@localhost .ssh]# ssh localhost
@@ -94,13 +94,13 @@ Last login: Tue Nov 12 12:30:30 2019 from localhost
 
 服务系统A连接服务系统B
 
-###  1.) 拷贝服务系统A中公钥id_rsa.pub到服务系统B
+##  1.) 拷贝服务系统A中公钥id_rsa.pub到服务系统B
 
 ```
 scp id_rsa.pub root@192.168.65.129:/opt/software/
 ```
 
-### 2.) 在服务系统B中将服务系统A拷贝的公钥文件写入到认证文件
+## 2.) 在服务系统B中将服务系统A拷贝的公钥文件写入到认证文件
 
 ```
 cat id_rsa.pub >> ~/.ssh/authorized_keys
@@ -110,7 +110,7 @@ cat id_rsa.pub >> ~/.ssh/authorized_keys
 
 
 
-### 3.) 服务系统A测试登录服务系统B
+## 3.) 服务系统A测试登录服务系统B
 
 ![img](http://upload-images.jianshu.io/upload_images/5629542-40c2daf874e5fe18.png?imageMogr2/auto-orient/strip|imageView2/2/w/665/format/webp)
 

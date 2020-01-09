@@ -1,6 +1,6 @@
 # Nginx快速安装&配置
 
-#### 一、Nginx安装
+## 一、Nginx安装
 
 - 添加RPM包进行安装
 
@@ -42,7 +42,7 @@ firewall-cmd --reload
 
 ![image](https://img.ken.io/blog/nginx/nginx-welcome.png)
 
-#### 二、Nginx常用配置
+## 二、Nginx常用配置
 
 - 配置文件说明
 
@@ -64,7 +64,7 @@ include /etc/nginx/server/*.conf;
 
 ```
 
-##### 1、反向代理配置
+### 1、反向代理配置
 
 ```
 #1、新建/修改配置文件
@@ -85,7 +85,7 @@ server {
 
 ```
 
-##### 2、负载均衡配置
+### 2、负载均衡配置
 
 ```
 upstream serverswitch {

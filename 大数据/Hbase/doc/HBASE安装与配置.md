@@ -22,13 +22,13 @@ slave_2 192.168.1.3
 
 
 
-### 一：下载文件
+## 一：下载文件
 
 地址：<http://www.apache.org/dyn/closer.lua/hbase/1.2.6/hbase-1.2.6-bin.tar.gz>
 
 ![img](https://images2018.cnblogs.com/blog/1293848/201805/1293848-20180524105941987-110315283.png)
 
-### 二：解压
+## 二：解压
 
 将文件解压到/usr/local下面
 
@@ -48,7 +48,7 @@ etc  hadoop  hive   include   lib   libexec  share
 
 ```
 
-###  三：配置hbase的环境变量
+##  三：配置hbase的环境变量
 
 ```
 [root@s100 local]# vim /etc/profile
@@ -66,7 +66,7 @@ etc  hadoop  hive   include   lib   libexec  share
 [root@s100 local]# source /etc/profile
 ```
 
-### 四：配置hbase
+## 四：配置hbase
 
 编辑hbase-site.xml文件
 
@@ -118,7 +118,7 @@ hbase-env.cmd                     hbase-policy.xml  log4j.properties
 
 备注：这里没有配置name:hbase.zookpeer.property.dataDir value:/home/centos/hbase/zk（hbase本身的zookpeer）
 
-### 五：关闭hbase本身的zookpeer
+## 五：关闭hbase本身的zookpeer
 
 在本文中，我们采用了自己的zookpeer，所以我们要关闭hbase本身zookpeer管理文件
 
@@ -132,7 +132,7 @@ export HBASE_MANAGES_ZK=false
 
  
 
-### 六：配置区域服务器（regionserver）
+## 六：配置区域服务器（regionserver）
 
 ```
 [root@s100 conf]# cat regionservers 
@@ -143,7 +143,7 @@ s3
 
  
 
-### 最后将hbase分发到s1,s2,s3上面，注意环境变量/etc/profile
+## 最后将hbase分发到s1,s2,s3上面，注意环境变量/etc/profile
 
 将s100上的hbase拷贝到s1上
 
@@ -166,7 +166,7 @@ profile                                                  100% 2215     2.2KB/s  
 
 s2和s3：重复上面步骤
 
-### 启动hbase
+## 启动hbase
 
 启动zookpeer集群（zookpeer位于s1:s2:s3上，[zookpeer安装与配置](https://www.cnblogs.com/dxxblog/p/8664126.html)）
 

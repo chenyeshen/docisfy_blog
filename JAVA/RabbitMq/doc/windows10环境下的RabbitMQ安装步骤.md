@@ -2,7 +2,7 @@
 
 记录下本人在win10环境下安装RabbitMQ的步骤，以作备忘。
 
-#### 第一步：下载并安装erlang
+## 第一步：下载并安装erlang
 
 - 原因：RabbitMQ服务端代码是使用并发式语言Erlang编写的，安装Rabbit MQ的前提是安装Erlang。
 - 下载地址：<http://www.erlang.org/downloads>
@@ -45,7 +45,7 @@
 
 ![img](https://chenyeshen.oss-cn-shenzhen.aliyuncs.com/oneblog/article/20190528100213094.png)
 
-#### 第二步：下载并安装RabbitMQ
+## 第二步：下载并安装RabbitMQ
 
 - 下载地址：<http://www.rabbitmq.com/download.html>
 

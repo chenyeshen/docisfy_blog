@@ -1,6 +1,6 @@
 # Linux安装JDK
 
-### 1、检查一下系统中的jdk版本
+## 1、检查一下系统中的jdk版本
 
 ```
 [root@localhost software]# java -version
@@ -14,7 +14,7 @@ OpenJDK Runtime Environment (build 1.8.0_102-b14)
 OpenJDK 64-Bit Server VM (build 25.102-b14, mixed mode)
 ```
 
-### 2、检测jdk安装包
+## 2、检测jdk安装包
 
 ```
 [root@localhost software]# rpm -qa | grep java
@@ -32,7 +32,7 @@ java-1.8.0-openjdk-headless-1.8.0.102-4.b14.el7.x86_64
 java-1.7.0-openjdk-headless-1.7.0.111-2.6.7.8.el7.x86_64
 ```
 
-### 3、卸载openjdk
+## 3、卸载openjdk
 
 ```
 [root@localhost software]# rpm -e --nodeps tzdata-java-2016g-2.el7.noarch
@@ -56,7 +56,7 @@ python-javapackages-3.4.1-11.el7.noarch
 javapackages-tools-3.4.1-11.el7.noarch
 ```
 
-### 4、安装新的jdk
+## 4、安装新的jdk
 
 首先到jdk官网上下载你想要的jdk版本，下载完成之后将需要安装的jdk安装包放到Linux系统指定的文件夹下，并且命令进入该文件夹下：
 
@@ -77,7 +77,7 @@ total 252664
 [root@localhost software]# tar -zxvf jdk-8u131-linux-x64.tar.gz -C /usr/lib/jvm
 ```
 
-### 5、设置环境变量
+## 5、设置环境变量
 
 ```
 [root@localhost software]# vim /etc/profile
@@ -91,7 +91,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-### 6、执行profile文件
+## 6、执行profile文件
 
 ```
 [root@localhost software]# source /etc/profile
@@ -99,7 +99,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 这样可以使配置不用重启即可立即生效。
 
-### 7、检查新安装的jdk
+## 7、检查新安装的jdk
 
 ```
 [root@localhost software]# java -version

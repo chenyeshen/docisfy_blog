@@ -1,4 +1,4 @@
-### SSH分客户端openssh-client和openssh-server
+## SSH分客户端openssh-client和openssh-server
 
 如果你只是想登陆别的机器的SSH只需要安装openssh-client（ubuntu有默认安装，如果没有则sudo apt-get install openssh-client），如果要使本机开放SSH服务就需要安装openssh-server。
 
@@ -8,19 +8,19 @@
 dpkg -l | grep ssh
 ```
 
-### 安装ssh-server服务
+## 安装ssh-server服务
 
 ```
 sudo apt-get install openssh-server
 ```
 
-### 再次查看安装的服务：
+## 再次查看安装的服务：
 
 ```
 dpkg -l| grep ssh
 ```
 
-### 然后确认ssh-server是否启动了：
+## 然后确认ssh-server是否启动了：
 
 ```
 ps -e | grep ssh
@@ -28,7 +28,7 @@ ps -e | grep ssh
 
 如果看到sshd那说明ssh-server已经启动了。 
 
-### 如果没有则可以这样启动：
+## 如果没有则可以这样启动：
 
 ```
 sudo /etc/init.d/ssh start或sudo service ssh start 

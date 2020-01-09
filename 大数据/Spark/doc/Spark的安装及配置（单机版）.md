@@ -63,7 +63,7 @@ export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 
 ## 3)运行Spark
 
-##### 先启动hadoop
+### 先启动hadoop
 
 ```
 $ cd $HADOOP_HOME/sbin/
@@ -73,7 +73,7 @@ $ ./start-history-server.sh
 
 ```
 
-##### 然后启动启动sapark
+### 然后启动启动sapark
 
 ```
 $ cd $SPARK_HOME/sbin/

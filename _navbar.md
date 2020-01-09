@@ -10,18 +10,15 @@
   * [**Spark**](/大数据/Spark/doc/Spark的安装及配置（单机版）.md)
 * **Spring**
   * [**Spring**](/JAVA/Spring/doc/Spring学习笔记.md)
-  * [**SpringBatch**](/JAVA/SpringBatch/doc/springbatch入门笔记.md)
   * [**SpringBoot**](/JAVA/SpringBoot/doc/SpringBoot学习笔记.md)
   * [**SpringCloud**](/JAVA/SpringCloud/doc/SpringCloud服务治理Eureka.md)
   * [**SpringCloudAlibaba**](/JAVA/SpringCloudAlibaba/doc/SpringCloudAlibaba之Nacos入门.md)
 * **Java**
-  * [**集合**](/JAVA/Collection集合/README.md)
-  * [**多线程**](/JAVA/Thread多线程/README.md)
-  * [**JVM**](/JAVA/JVM/README.md)
+  * [**SpringBatch**](/JAVA/SpringBatch/doc/springbatch入门笔记.md)
   * [**TK.Mapper**](/JAVA/通用mapper/doc/通用TkMapper时开启Mybatis的二级缓存.md)
-  * [**Redis**](/JAVA/Redis/doc/Redis详解.md)
+  * [**Redis**](/JAVA/Redis/doc/Redis.md)
   * [**Shiro**](/JAVA/Shiro/doc/Shiro权限注解.md)
-  * [**Maven**](/JAVA/Maven/doc/2019-08-24-maven导入alipay-sdk-java包到本地仓库.md)
+  * [**Maven**](/JAVA/Maven/doc/maven导入alipay-sdk-java包到本地仓库.md)
   * [**JWT**](/JAVA/JWT/doc/JWT初篇.md)
   * [**Swagger**](/JAVA/Swagger/doc/swagger2注解说明.md)  
   * [**RabbiMq**](/JAVA/RabbitMq/doc/windows10环境下的RabbitMQ安装步骤.md) 
@@ -29,8 +26,8 @@
 * **Linux**
   * [**Linux初级入门**](/LINUX/Linux初级入门/doc/linxu随手记.md)
   * [**Linux中级篇**](/LINUX/Linux中级篇/doc/基础命令常用命令.md)
-* [**Docker**](/docker/doc/docker常用命令.md)   
-* [**Promethus**](/Promethus/doc/Promethus普罗米修斯监控.md)   
+  * [**Docker**](/docker/doc/docker常用命令.md)   
+  * [**Promethus**](/Promethus/doc/Promethus普罗米修斯监控.md)   
 * **Elasticsearch**
   * [**elasticsearch 核心知识篇**](/elasticsearch-core/index.md)
   * [**elasticsearch 高级篇**](/elasticsearch-senior/index.md)

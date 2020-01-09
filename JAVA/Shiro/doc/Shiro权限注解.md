@@ -8,7 +8,7 @@
 
 测试：
 
-### 1、创建类ShiroService
+## 1、创建类ShiroService
 
 ```
 public class ShiroService {
@@ -21,7 +21,7 @@ public class ShiroService {
 
 ```
 
-### 2、在Spring配置文件中配置bean
+## 2、在Spring配置文件中配置bean
 
 ```
 <bean id="shiroService"
@@ -29,7 +29,7 @@ public class ShiroService {
 
 ```
 
-### 3、创建接口`shiro/testShiroAnnotation`。添加权限注解 `@RequiresRoles({"admin"})`
+## 3、创建接口`shiro/testShiroAnnotation`。添加权限注解 `@RequiresRoles({"admin"})`
 
 ```
 @Controller
@@ -50,7 +50,7 @@ public class ShiroHandler {
 
 ```
 
-### 结果：
+## 结果：
 
  当登录的用户有admin角色时，可以正常访问，否则抛异常：
 

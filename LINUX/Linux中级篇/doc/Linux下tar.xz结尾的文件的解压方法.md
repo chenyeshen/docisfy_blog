@@ -1,6 +1,4 @@
-
-
-###  Linux下tar.xz结尾的文件的解压方法
+##  Linux下tar.xz结尾的文件的解压方法
 
 ```
 $xz -d ***.**tar.xz**

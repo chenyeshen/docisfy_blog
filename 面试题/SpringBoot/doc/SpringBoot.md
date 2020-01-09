@@ -1,6 +1,6 @@
 # Spring boot
 
-#### 1. 如何在不重启服务器的情况下在Spring引导时重新加载我的更改?
+## 1. 如何在不重启服务器的情况下在Spring引导时重新加载我的更改?
 
 答:这可以通过开发工具来实现。有了这个依赖项，您保存的任何更改都将重新启动嵌入的tomcat。Spring Boot有一个开发人员工具(DevTools)模块
 
@@ -12,23 +12,23 @@
 </dependency>
 ```
 
-#### 2. 什么是Spring boot actuator?
+## 2. 什么是Spring boot actuator?
 
 答:Spring boot actuator是Spring boot framework的重要特性之一。Spring boot actuator帮助您访问生产环境中正在运行的应用程序的当前状态，在生产环境中必须检查和监视几个指标。甚至一些外部应用程序也可能使用这些服务来触发对相关人员的警报消息。actuator模块公开一组REST端点，这些端点可以作为HTTP URL直接访问，以检查状态。
 
-#### 3. 如何禁用执行器端点安全在Spring启动?
+## 3. 如何禁用执行器端点安全在Spring启动?
 
 答:默认情况下，所有敏感的HTTP端点都是安全的，只有具有ACTUATOR角色的用户才能访问它们。安全性是使用标准HttpServletRequest.isUserInRole方法实现的。
 我们可以使用-禁用安全性
 management.security.enabled = false
 建议仅当在防火墙后访问ACTUATOR端点时禁用安全性。
 
-#### 4. 如何将Spring引导应用程序运行到自定义端口?
+## 4. 如何将Spring引导应用程序运行到自定义端口?
 
 要在自定义端口上运行spring引导应用程序，可以在application.properties中指定端口。
 server.port = 8090
 
-#### 5. 怎么用Spring Boot编写测试用例?
+## 5. 怎么用Spring Boot编写测试用例?
 
 答:SpringBoot为编写单元测试用例提供了@SpringBootTest
 
@@ -39,7 +39,7 @@ server.port = 8090
 ​    *public void *contextLoads() {}
 }
 
-#### 6. Spring Boot 的配置文件有哪几种格式？它们有什么区别？
+## 6. Spring Boot 的配置文件有哪几种格式？它们有什么区别？
 
 答：pring Boot 的核心配置文件是 application 和 bootstrap 配置文件。
 
@@ -53,11 +53,11 @@ bootstrap 配置文件有以下几个应用场景。
 
 一些加密/解密的场景；
 
-#### 7. Spring Boot 有哪几种读取配置的方式？
+## 7. Spring Boot 有哪几种读取配置的方式？
 
 答：Spring Boot 可以通过 @PropertySource,@Value,@Environment, @ConfigurationProperties 来绑定变量
 
-#### 8. 如何理解 Spring Boot 配置加载顺序？
+## 8. 如何理解 Spring Boot 配置加载顺序？
 
 答：在 Spring Boot 里面，可以使用以下几种方式来加载配置。
 
@@ -69,11 +69,11 @@ bootstrap 配置文件有以下几个应用场景。
 
 4） 命令行参数；
 
-#### 9. Spring Boot是如何实现异常处理？
+## 9. Spring Boot是如何实现异常处理？
 
 答：Spring提供了一种使用ControllerAdvice处理异常的非常有用的方法。 我们通过实现一个ControlerAdvice类，来处理控制器类抛出的所有异常。
 
-#### 10. 如何用Spring Boot实现拦截器?
+## 10. 如何用Spring Boot实现拦截器?
 
 1.OneInterceptor类必须实现接口 HandlerInterceptor，然后重写里面需要的三个比较常用的方法：
 

@@ -2,7 +2,7 @@
 
 - ​
 
-### 1、swagger2 注解整体说明
+## 1、swagger2 注解整体说明
 
 用于controller类上
 
@@ -30,7 +30,7 @@
 | @ApiModel         | 用在JavaBean类上，说明JavaBean的 用途 |
 | @ApiModelProperty | 用在JavaBean类的属性上面，说明此属性的的含议  |
 
-### 2、`@Api`：请求类的说明
+## 2、`@Api`：请求类的说明
 
 ```
 @Api：放在 请求的类上，与 @Controller 并列，说明的请求类的用下，如用户登录类，订单类等。
@@ -65,7 +65,7 @@ public class ApiLoginController {
 | authorizations | 高级特性认证时配置                              |
 | hidden         | 配置为true ，将在文档中隐藏                       |
 
-### 3、`@ApiOperation`：方法的说明
+## 3、`@ApiOperation`：方法的说明
 
 ```
 @ApiOperation："用在请求的方法上，说明方法的作用"
@@ -74,7 +74,7 @@ public class ApiLoginController {
 
 ```
 
-#### 3.1、`@ApiImplicitParams`、`@ApiImplicitParam`：方法参数的说明
+### 3.1、`@ApiImplicitParams`、`@ApiImplicitParam`：方法参数的说明
 
 ```
 @ApiImplicitParams：用在请求的方法上，包含一组参数说明
@@ -111,7 +111,7 @@ public JsonResult login(@RequestParam String mobile, @RequestParam String passwo
 
 ```
 
-### 4、`@ApiResponses`、`@ApiResponse`：方法返回值的说明
+## 4、`@ApiResponses`、`@ApiResponse`：方法返回值的说明
 
 ```
 @ApiResponses：方法返回对象的说明
@@ -142,7 +142,7 @@ public JsonResult list(@RequestParam String userId) {
 
 ```
 
-### 5、`@ApiModel`：用于JavaBean上面，表示一个JavaBean（如：响应数据）的信息
+## 5、`@ApiModel`：用于JavaBean上面，表示一个JavaBean（如：响应数据）的信息
 
 ```
 @ApiModel：用于JavaBean的类上面，表示此 JavaBean 整体的信息
@@ -151,7 +151,7 @@ public JsonResult list(@RequestParam String userId) {
 
 ```
 
-#### 5.1、`@ApiModelProperty`：用在JavaBean类的属性上面，说明属性的含义
+### 5.1、`@ApiModelProperty`：用在JavaBean类的属性上面，说明属性的含义
 
 示例:
 

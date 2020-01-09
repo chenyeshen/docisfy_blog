@@ -4,7 +4,7 @@
 
 Kafka集群是把状态保存在Zookeeper中的，首先要搭建Zookeeper集群。
 
-#### **1、软件环境**
+### **1、软件环境**
 
 （3台服务器-我的测试）
 192.168.30.204 server1
@@ -15,11 +15,11 @@ Kafka集群是把状态保存在Zookeeper中的，首先要搭建Zookeeper集群
 1-2、zookeeper是用java写的所以他的需要JAVA环境，java是运行在java虚拟机上的
 1-3、Zookeeper的稳定版本Zookeeper 3.4.6版本
 
-#### **2、配置&安装Zookeeper**
+### **2、配置&安装Zookeeper**
 
 下面的操作是：3台服务器统一操作
 
-##### 2-1、安装Java
+#### 2-1、安装Java
 
 (可选) 卸载已有的open jdk，安装最新版本的java jdk
 
@@ -33,7 +33,7 @@ Kafka集群是把状态保存在Zookeeper中的，首先要搭建Zookeeper集群
 
 安装JAVA， 请见 <http://qiangsh.blog.51cto.com/3510397/1771748>
 
-##### 2-2、下载Zookeeper
+#### 2-2、下载Zookeeper
 
 首先要注意在生产环境中目录结构要定义好，防止在项目过多的时候找不到所需的项目
 
@@ -54,7 +54,7 @@ tar -zxvf zookeeper-3.4.12.tar.gz
 mv zookeeper-3.4.12 /usr/local/zookeeper
 ```
 
-#### **3、修改配置文件**
+### **3、修改配置文件**
 
 进入到解压好的目录里面的conf目录中，查看
 
@@ -108,7 +108,7 @@ server.3=192.168.30.206:12888:13888
 #192.168.7.107为集群里的IP地址，第一个端口是master和slave之间的通信端口，默认是2888，第二个端口是leader选举的端口，集群刚启动的时候选举或者leader挂掉之后进行新的选举的端口默认是3888
 ```
 
-#### **1、三台服务器上分别创建myid文件**
+### **1、三台服务器上分别创建myid文件**
 
 ```
 #server1（192.168.30.204）
@@ -119,7 +119,7 @@ echo "2" > /data/zookeeper/zkdata/myid
 echo "3" > /data/zookeeper/zkdata/myid
 ```
 
-#### **2、重要配置说明**
+### **2、重要配置说明**
 
 2-1、myid文件和server.myid 在快照目录下存放的标识本台服务器的文件，他是整个zk集群用来发现彼此的一个重要标识。
 2-2、zoo.cfg 文件是zookeeper配置文件 在conf目录里。
@@ -194,7 +194,7 @@ zkServer.sh 主的管理程序文件
 zkEnv.sh 是主要配置，zookeeper集群启动时配置环境变量的文件
 ```
 
-#### **3、zookeeper定期清理快照和日志文件**
+### **3、zookeeper定期清理快照和日志文件**
 
 ZooKeeper server will not remove old snapshots and log files when using the default configuration (see autopurge below), this is the responsibility of the operator
 \#zookeeper不会主动的清除旧的快照和日志文件，这个是操作者的责任。但是可以通过命令去定期的清理。
@@ -233,7 +233,7 @@ ls -t $dataDir/snapshot.* | tail -n +$count | xargs rm -f
 >
 > 推荐使用第一种方法，对于运维人员来说，将日志清理工作独立出来，便于统一管理也更可控。毕竟zk自带的一些工具并不怎么给力。
 
-#### **4、配置zookeeper的环境变量**
+### **4、配置zookeeper的环境变量**
 
 ```
 # vim /etc/profile
@@ -293,13 +293,13 @@ echo '/usr/local/zookeeper/bin/zkServer.sh start' >>/etc/rc.local
 
 ## Kafka集群搭建
 
-#### **1、软件环境**
+### **1、软件环境**
 
 1-1、linux一台或多台，大于等于2
 1-2、已经搭建好的zookeeper集群
 1-3、软件版本kafka_2.11-0.9.0.1.tgz
 
-#### **2、创建目录并下载安装软件**
+### **2、创建目录并下载安装软件**
 
 准备好kafka安装包，官网下载地址：
 <http://kafka.apache.org/downloads.html>
@@ -316,7 +316,7 @@ tar -zxvf kafka_2.11-1.0.1.tgz
 mv kafka_2.11-1.0.1 /usr/local/kafka
 ```
 
-#### **3、修改配置文件**
+### **3、修改配置文件**
 
 进入到config目录
 `ll /usr/local/kafka/config/`
@@ -384,7 +384,7 @@ zookeeper.connect=192.168.30.204:12181,192.168.30.205:12181,192.168.30.206:12181
 
 ### 启动Kafka集群并测试
 
-#### **1、配置Kafka的环境变量**
+### **1、配置Kafka的环境变量**
 
 ```
 # vim /etc/profile
@@ -394,7 +394,7 @@ export PATH=$PATH:$KAFKA_HOME/bin
 # source /etc/profile
 ```
 
-#### **2、启动Kafka服务**
+### **2、启动Kafka服务**
 
 ```
 #从后台启动Kafka集群（3台都需要启动）
@@ -404,7 +404,7 @@ kafka-server-start.sh -daemon ../config/server.properties
 /usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties &
 ```
 
-#### **3、验证服务是否启动**
+### **3、验证服务是否启动**
 
 ```
 #执行命令jps
@@ -417,7 +417,7 @@ kafka-server-start.sh -daemon ../config/server.properties
 
 ### 验证Kafka
 
-#### **1、创建topic**
+### **1、创建topic**
 
 ```
 #创建Topic
@@ -445,7 +445,7 @@ Topic:qsh   PartitionCount:3    ReplicationFactor:3 Configs:
 # kafka-topics.sh --delete --zookeeper localhost:12181 --topic qsh
 ```
 
-#### **2、测试使用Kafka**
+### **2、测试使用Kafka**
 
 ```
 #在一台服务器上创建一个发布者-发送消息
@@ -461,7 +461,7 @@ kafka-console-consumer.sh --zookeeper 192.168.30.206:12181 --topic qsh --from-be
 #测试（订阅者那里能正常收到发布者发布的消息，则说明已经搭建成功）
 ```
 
-#### **3、其他命令**
+### **3、其他命令**
 
 更多请看官方文档：<http://kafka.apache.org/documentation.html>
 
@@ -472,7 +472,7 @@ kafka-topics.sh --list --zookeeper localhost:12181
 #就会显示我们创建的所有topic
 ```
 
-#### **4、日志说明**
+### **4、日志说明**
 
 默认kafka的日志是保存在/usr/local/kafka/logs/目录下的，这里说几个需要注意的日志
 
@@ -482,7 +482,7 @@ state-change.log    #kafka是用zookeeper来保存状态，所以他可能会进
 controller.log     #kafka选择一个节点作为“controller”,当发现有节点down掉的时候它负责在有用分区的所有节点中选择新的leader,这使得Kafka可以批量的高效的管理所有分区节点的主从关系。如果controller down掉了，活着的节点中的一个会备切换为新的controller.
 ```
 
-#### **5、登录zk查看目录情况**
+### **5、登录zk查看目录情况**
 
 ```
 #使用客户端进入zk

@@ -2,7 +2,7 @@
 
 > 观看 [视频版](https://www.youtube.com/watch?v=iaAot5K2sps) 教程。
 
-# Rocket.Chat 特性
+## Rocket.Chat 特性
 
 - 群组聊天
 - 直接通信
@@ -17,7 +17,7 @@
 
 这篇文章中我将在 `Ubuntu 18.04 LTS` 上安装 Rocket.Chat，使用 Nginx 作为反向代理，同时还会配置 SSL 证书。
 
-# 准备环境
+## 准备环境
 
 你需要有以下环境：
 
@@ -27,7 +27,7 @@
 
 > 如果有域名在你的网站域名商处添加一条 DNS 的 A 记录指向服务器。
 
-# 安装 Rocket.Chat
+## 安装 Rocket.Chat
 
 开始前我们先更新下操作系统
 
@@ -54,7 +54,7 @@ sudo service snap.rocketchat-server.rocketchat-server status
 
 你可以访问 [Rocket.Chat snap](https://rocket.chat/docs/installation/manual-installation/ubuntu/snaps/) 查看一些其他命令。
 
-# 使用 Nginx 反向代理
+## 使用 Nginx 反向代理
 
 ## 安装 Nginx
 

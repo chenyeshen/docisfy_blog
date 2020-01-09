@@ -1,6 +1,6 @@
 # CentOS 7 安装JDK详细步骤
 
-#### 第一种方式：yum命令安装
+## 第一种方式：yum命令安装
 
 检索包含java的列表
 
@@ -129,7 +129,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
 
 ```
 
-#### 第二种方式：下载后安装
+## 第二种方式：下载后安装
 
 去Oracle官网下载所需JDK版本:
 
@@ -192,4 +192,4 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
 
 ------
 
-##### 完。
+### 完。

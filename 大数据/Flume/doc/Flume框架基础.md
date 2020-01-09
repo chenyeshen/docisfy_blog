@@ -24,7 +24,7 @@ Flume提供一个分布式的，可靠的，对大数据量的日志进行高效
 
 ### 传输单元
 
-##### Event
+#### Event
 
 Flume数据传输的基本单元，以事件的形式将数据从源头送至目的地
 
@@ -36,7 +36,7 @@ hannel队列先进先出，sink去channel队列中拉取数据，然后写入到
 
 ## 3、安装配置FLume
 
-##### 3.1 flume-env.sh
+### 3.1 flume-env.sh
 
 配置Java的环境变量
 
@@ -50,7 +50,7 @@ $ bin/flume-ng
 
 ### 5.1、案例一：Flume监听端口，输出端口数据。
 
-##### 5.1.1、创建Flume Agent配置文件flume-telnet.conf
+#### 5.1.1、创建Flume Agent配置文件flume-telnet.conf
 
 ```
 a1.sources = r1
@@ -75,20 +75,20 @@ a1.sources.r1.channels = c1
 a1.sinks.k1.channel = c1
 ```
 
-##### 5.1.2、安装telnet工具
+#### 5.1.2、安装telnet工具
 
 ```
 $ sudo rpm -ivh telnet-server-0.17-59.el7.x86_64.rpm 
 $ sudo rpm -ivh telnet-0.17-59.el7.x86_64.rpm
 ```
 
-##### 5.1.3、首先判断44444端口是否被占用
+#### 5.1.3、首先判断44444端口是否被占用
 
 ```
 $ netstat -an | grep 44444
 ```
 
-##### 5.1.4、先开启flume先听端口
+#### 5.1.4、先开启flume先听端口
 
 ```
 $ bin/flume-ng agent --conf conf/ --name a1 --conf-file conf/flume-telnet.conf -Dflume.root.logger==INFO,console
@@ -96,7 +96,7 @@ $ bin/flume-ng agent --conf conf/ --name a1 --conf-file conf/flume-telnet.conf -
 
 ![](https://i.loli.net/2019/11/24/6jnlGN85eiJxRQO.png)
 
-##### 5.1.5、使用telnet工具向本机的44444端口发送内容。
+#### 5.1.5、使用telnet工具向本机的44444端口发送内容。
 
 ```
 $ telnet localhost 44444
@@ -106,7 +106,7 @@ $ telnet localhost 44444
 
 ### 5.2、案例二：监听上传Hive日志文件到HDFS
 
-##### 5.2.1 拷贝Hadoop相关jar到Flume的lib目录下
+#### 5.2.1 拷贝Hadoop相关jar到Flume的lib目录下
 
 ```
 share/hadoop/common/lib/hadoop-auth-2.5.0-cdh5.3.6.jar
@@ -117,7 +117,7 @@ share/hadoop/common/hadoop-common-2.5.0-cdh5.3.6.jar
 
 
 
-##### 5.2.2 创建flume-hdfs.conf文件
+#### 5.2.2 创建flume-hdfs.conf文件
 
 ```
 #Name the components on this agent
@@ -169,7 +169,7 @@ a2.sinks.k2.channel = c2
 
 
 
-##### 5.2.3、执行监控配置
+#### 5.2.3、执行监控配置
 
 ```
 $ bin/flume-ng agent --conf conf/ --name a2 --conf-file conf/flume-hdfs.conf 
@@ -177,7 +177,7 @@ $ bin/flume-ng agent --conf conf/ --name a2 --conf-file conf/flume-hdfs.conf
 
 ### 5.3、案例三：Flume监听整个目录
 
-##### 5.3.1 创建配置文件flume-dir.conf
+#### 5.3.1 创建配置文件flume-dir.conf
 
 ```
 $ cp -a flume-hdfs.conf flume-dir.conf
@@ -245,7 +245,7 @@ a3.sinks.k3.channel = c3
 
 
 
-##### 5.3.2、执行测试
+#### 5.3.2、执行测试
 
 ```
 $ bin/flume-ng agent --conf conf/ --name a3 --conf-file conf/flume-dir.conf &
@@ -261,6 +261,6 @@ $ bin/flume-ng agent --conf conf/ --name a3 --conf-file conf/flume-dir.conf &
 2、上传完成的文件会以.COMPLETED结尾
 3、被监控文件夹每600毫秒扫描一次变动
 
-##### 作业：
+#### 作业：
 
 	1、实现hive.log日志实时上传到HDFS，同时实现Hadoop日志实时展示在控制台。

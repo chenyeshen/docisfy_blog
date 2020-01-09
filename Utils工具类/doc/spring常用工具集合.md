@@ -2,7 +2,7 @@
 
 jar包位置 spring-core.jar
 
-### 1.访问文件资源
+## 1.访问文件资源
 
 假设有一个文件地位于 Web 应用的类路径下，您可以通过以下方式对这个文件资源进行访问：
 
@@ -14,40 +14,40 @@ ResourceUtils 它支持“classpath:”和“file:”的地址前缀，它能够
 
 ```
 
-### 2.本地化文件资源
+## 2.本地化文件资源
 
 ```
 LocalizedResourceHelper 允许通过文件资源基名和本地化实体获取匹配的本地化文件资源并以 Resource 对象返回
 
 ```
 
-### 3.文件操作
+## 3.文件操作
 
 ```
 FileCopyUtils，它提供了许多一步式的静态操作方法，能够将文件内容拷贝到一个目标 byte[]、String 甚至一个输出流或输出文件中。
 
 ```
 
-### 4.属性文件操作
+## 4.属性文件操作
 
 ```
 PropertiesLoaderUtils 允许您直接通过基于类路径的文件地址加载属性资源
 ```
 
-### 5.特殊编码的资源
+## 5.特殊编码的资源
 
 ```
 EncodedResource  当您使用 Resource 实现类加载文件资源时，它默认采用操作系统的编码格式。如果文件资源采用了特殊的编码格式（如 UTF-8），则在读取资源内容时必须事先通过 EncodedResource 指定编码格式，否则将会产生中文乱码的问题。
 ```
 
-### 6.操作 Servlet API 的工具类
+## 6.操作 Servlet API 的工具类
 
 ```
 WebApplicationContextUtils 工具类获取 WebApplicationContext 对象
 WebApplicationContext wac =WebApplicationContextUtils.getRequiredWebApplicationContext(ServletContext sc);
 ```
 
-### 7.WebUtils
+## 7.WebUtils
 
 ```
 主要方法：
@@ -59,25 +59,25 @@ WebApplicationContext wac =WebApplicationContextUtils.getRequiredWebApplicationC
 void exposeRequestAttributes(ServletRequest request, Map attributes)	将 Map 元素添加到 ServletRequest 的属性列表中，当请求被导向（forward）到下一个处理程序时，这些请求属性就可以被访问到了；
 ```
 
-### 8.延迟加载过滤器
+## 8.延迟加载过滤器
 
 ```
 OpenSessionInViewFilter 过滤器将 Hibernate Session 绑定到请求线程中，它将自动被 Spring 的事务管理器探测到。所以 OpenSessionInViewFilter 适用于 Service 层使用 HibernateTransactionManager 或 JtaTransactionManager 进行事务管理的环境，也可以用于非事务只读的数据操作中。
 ```
 
-### 9.中文乱码过滤器
+## 9.中文乱码过滤器
 
 ```
 CharacterEncodingFilter 当通过表单向服务器提交数据时，一个经典的问题就是中文乱码问题。虽然我们所有的 JSP 文件和页面编码格式都采用 UTF-8，但这个问题还是会出现。解决的办法很简单，我们只需要在 web.xml 中配置一个 Spring 的编码转换过滤器就可以了
 ```
 
-### 10.请求跟踪日志过滤器
+## 10.请求跟踪日志过滤器
 
 ```
 ServletContextRequestLoggingFilter 在日志级别为 DEBUG 时才会起作用
 ```
 
-### 11.监听器配置
+## 11.监听器配置
 
 ```
 WebAppRootListener 
@@ -85,7 +85,7 @@ Log4J 监听器 Log4jConfigListener
 缓存清除监听器 IntrospectorCleanupListener 
 ```
 
-### 12.特殊字符转义
+## 12.特殊字符转义
 
 ```
 HTML 特殊字符转义
@@ -96,7 +96,7 @@ SQL特殊字符转义 （引入 jakarta commons lang 类包）
 StringEscapeUtils 常用方法： escapeSql
 ```
 
-### 13.方法入参检测工具类
+## 13.方法入参检测工具类
 
 ```
 Assert  常用方法：notNull(Object object)/notNull(Object object, String message) 
@@ -110,7 +110,7 @@ isInstanceOf(Class clazz, Object obj) / isInstanceOf(Class type, Object obj, Str
 isAssignable(Class superType, Class subType) / isAssignable(Class superType, Class subType, String message)	subType 必须可以按类型匹配于 superType，否则将抛出异常；
 ```
 
-### 14.请求工具类 ServletRequestUtils
+## 14.请求工具类 ServletRequestUtils
 
 ```
 //取请求参数的整数值：
@@ -133,20 +133,20 @@ public static int[] getIntParameters(ServletRequest request, String name) -->数
 
 
 
-### 15.集合工具类 CollectionUtils
+## 15.集合工具类 CollectionUtils
 
 ```
 判断集合是否为空 isEmpty
 ```
 
-### 16.对象序列化与反序列化 SerializationUtils
+## 16.对象序列化与反序列化 SerializationUtils
 
 ```
 public static byte[] serialize(Object object)
 public static Object deserialize(byte[] bytes)
 ```
 
-### 17.数字处理 org.springframework.util.NumberUtils
+## 17.数字处理 org.springframework.util.NumberUtils
 
 字符串转换为Number并格式化，包括具体的Number实现类，如Long、Integer、Double，字符串支持16进制字符串，并且会自动去除字符串中的空格：
     public static <T extends Number> T parseNumber(String text, Class<T> targetClass)
@@ -155,7 +155,7 @@ public static Object deserialize(byte[] bytes)
 public static <T extends Number> T convertNumberToTargetClass(Number number, Class<T> targetClass)
 
 
-### 18.目录复制
+## 18.目录复制
 
 ```
 org.springframework.util.FileSystemUtils 递归复制、删除一个目录
@@ -163,13 +163,13 @@ org.springframework.util.FileSystemUtils 递归复制、删除一个目录
 
 
 
-### 19.MD5加密DigestUtils
+## 19.MD5加密DigestUtils
 
 ```
 字节数组的MD5加密 public static String md5DigestAsHex(byte[] bytes)
 ```
 
-### xml工具
+## xml工具
 
 ```
 org.springframework.util.xml.AbstractStaxContentHandler
@@ -184,7 +184,7 @@ org.springframework.util.xml.StaxUtils
 org.springframework.util.xml.TransformerUtils
 ```
 
-### 其它工具集
+## 其它工具集
 
 ```
 org.springframework.util.AntPathMatcherant 风格的处理
@@ -216,7 +216,7 @@ org.springframework.util.TypeUtils 用于类型相容的判断. isAssignable
 org.springframework.util.WeakReferenceMonitor 弱引用的监控 
 ```
 
-### web相关的工具
+## web相关的工具
 
 ```
 org.springframework.web.util.CookieGenerator
@@ -231,7 +231,7 @@ org.springframework.web.util.UriUtils 处理uri里特殊字符的编码
 org.springframework.web.util.WebUtils
 ```
 
-### SpringUtil工具类
+## SpringUtil工具类
 
 ```
 import com.alibaba.fastjson.JSONObject;
@@ -349,4 +349,4 @@ import java.util.Map;
 
 
 
-### 
+## 

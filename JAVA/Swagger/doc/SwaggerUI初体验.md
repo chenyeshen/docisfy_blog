@@ -1,16 +1,16 @@
 # **Swagger UI 初体验**
 
-### 简介
+## 简介
 
 Swagger UI 是目前最流行的 RestFul 接口 API 文档和测试工具，可以直接在官方 demo上进行体验。
 
 本文介绍下如何在 SpringBoot2 中集成 Swagger UI。
 
-### 初体验
+## 初体验
 
 非常简单，只需要两步即可。
 
-### 依赖
+## 依赖
 
 ```
  <dependency>
@@ -28,7 +28,7 @@ Swagger UI 是目前最流行的 RestFul 接口 API 文档和测试工具，可�
 
 第二个依赖中包含有前端 js/css 资源。
 
-### 编写配置文件
+## 编写配置文件
 
 ```
 package com.example.testredisreactive;
@@ -73,15 +73,15 @@ public class SwaggerConfig {
 
 ```
 
-### 使用
+## 使用
 
 打开浏览器，访问[http://localhost:8080/swagger-ui.html即可](http://localhost:8080/swagger-ui.html%E5%8D%B3%E5%8F%AF)
 
-### api 选择器
+## api 选择器
 
 如何只筛选出指定的 API 呢？
 
-### 包名
+## 包名
 
 一种方法是，根据包名来筛选
 
@@ -98,7 +98,7 @@ public class SwaggerConfig {
 
 ```
 
-### path
+## path
 
 另一种方法是，根据 path 来筛选
 
@@ -115,7 +115,7 @@ public class SwaggerConfig {
 
 ```
 
-### 详细文档
+## 详细文档
 
 怎么样生成详细的文档呢？
 
@@ -177,7 +177,7 @@ public class TestController {
 
 ```
 
-### 数据模型示例
+## 数据模型示例
 
 ```
 package com.example.testredisreactive;

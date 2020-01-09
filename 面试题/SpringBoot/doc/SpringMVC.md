@@ -1,6 +1,6 @@
 # Spring Mvc
 
-#### 1. 描述DispatcherServlet 的工作流程
+## 1. 描述DispatcherServlet 的工作流程
 
  
 
@@ -32,13 +32,13 @@ HttpMessageConveter： 将请求消息（如 Json、xml 等数据）转换成一
 
 (6)视图负责将渲染结果返回给客户端。
 
-#### 2. 介绍一下 WebApplicationContext
+## 2. 介绍一下 WebApplicationContext
 
 WebApplicationContext 是 ApplicationContext 的扩展。它具有 Web 应用程序所需的一些额外功能。它与普通的 ApplicationContext 在解析主题和决定与哪个 servlet 关联的能力方面有所不同
 
 ## Spring boot
 
-#### 1. 如何在不重启服务器的情况下在Spring引导时重新加载我的更改?
+## 1. 如何在不重启服务器的情况下在Spring引导时重新加载我的更改?
 
 答:这可以通过开发工具来实现。有了这个依赖项，您保存的任何更改都将重新启动嵌入的tomcat。Spring Boot有一个开发人员工具(DevTools)模块
 
