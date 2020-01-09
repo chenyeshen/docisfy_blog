@@ -1,5 +1,8 @@
 # 快速安装
 
+
+### [Prometheus监控系统](pdf/Prometheus监控系统)
+
 ### 全局安装docsify
 
 ```

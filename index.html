@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8"> 
   <link rel="stylesheet" href="static/vue.css">
+  <link rel="stylesheet" href="https://unpkg.com/docsify-vuepress-theme/dist/style.min.css" />
+
 
 </head>
 <body>
@@ -22,8 +24,7 @@
 	   auto2top: true, //当路径改变时，滚到屏幕顶部
 	   
 	   mergeNavbar: true, //小屏设备下合并导航栏到侧边栏。
-	  
-	   
+	    
 	 
     // 完整配置参数
       search: {
@@ -39,17 +40,19 @@
       noData: {
         '/': '找不到结果'
       },
-
+	  
       // 搜索标题的最大程级, 1 - 6
-      depth: 1
+      depth: 3
 	  
 	  
     }
 	 
 	   
     }
-  </script>
+  </script> 
    <script src="static/docsify.min.js"></script>
+   <script src="https://unpkg.com/docsify-vuepress-theme/dist/index.min.js"></script>
+   <script src="https://unpkg.com/docsify-vuepress-theme/dist/index.js"></script>
   <script src="static/search.js"></script>
   <script src="static/zoom-image.js"></script>
   <script src="static/prism-bash.min.js"></script>
@@ -59,8 +62,31 @@
   <script src="static/prism-java.min.js"></script>
   <script src="static/prism-properties.min.js"></script>
   <script src="static/prism-scala.min.js"></script>
- 
-  
+  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <script>
+        L2Dwidget.init({
+            "model": {
+                //jsonpath控制显示那个模型
+                jsonPath: "https://assets.smallsunnyfox.com/models/model/HyperdimensionNeptunia/histoire/index.json",
+                "scale": 1
+            },
+            "display": {
+                 "position": "right", //看板娘的表现位置
+                "width": 110,  //宽度
+                "height": 260, //高度
+                "hOffset": 20,  //水平
+                "vOffset": 20   //纵坐标
+            },
+            "mobile": {
+                "show": true,
+                "scale": 1.0
+            },
+            "react": {
+                "opacityDefault": 1.2,
+                "opacityOnHover": 0.2
+            }
+        });
+    </script>
 </script>
 </body>
 </html>
