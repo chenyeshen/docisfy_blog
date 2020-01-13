@@ -1,0 +1,9 @@
+{
+  "name": "yeshen",
+  "version": "2.0.0",
+  "description": "My NoteBook",
+  "main": "index.js",
+  "scripts": {
+    "d": "bash deploy.sh"
+  }
+}
