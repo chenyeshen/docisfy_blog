@@ -7,6 +7,6 @@ set -e
 git add .
 git commit -m $cur_dateTime
 
-git push  git@github.com:chenyeshen/docsify_blog.git master
+git push origin master
 
 cd -
