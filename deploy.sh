@@ -9,4 +9,3 @@ git commit -m $cur_dateTime
 
 git push origin master
 
-cd -
