@@ -7,5 +7,5 @@
 * 从小要记住，好好学习，天天向上！
 * Good good study, day day to up!
 
-[萌酱か小精灵](https://notebook.spring.tk)
+[萌酱か小精灵](https://blog.spring.tk)
 [Get Started](/README.md)
